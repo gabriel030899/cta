@@ -126,6 +126,26 @@ catch (Exception $e) {
    
 }
 
+if ($codigo == "s1") {
+    
+  try {
+       
+       $sql = "INSERT INTO redirect_data (url_atual,url_destino) 
+   VALUES ('PILAR SHE', 'ASPIMP E LPD')";	
+   
+   $stmt = $Conexao->query($sql);
+ 
+  
+   } 
+   
+catch (Exception $e) {
+    var_dump($e);
+}
+   
+?> <html> <meta http-equiv="refresh" content="0;url=aspimp.php"></html> <?php
+   
+}
+
 else {
     
     

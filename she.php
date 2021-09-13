@@ -84,7 +84,7 @@
               #pilar2 {
                 
                 
-                background: url("assets/img/ma.png") no-repeat;
+                background: url("assets/img/BBS.png") no-repeat;
                                                                 background-position:center;
                                 background-size:contain;
 
@@ -94,7 +94,7 @@
                         #pilar2:hover {
                 
                 
-                background: url("assets/img/ma_hover.png") no-repeat;
+                background: url("assets/img/BBS_HOVER.png") no-repeat;
                                                 background-position:center;
                                 background-size:contain;
 
@@ -220,7 +220,8 @@
                 <div id="mae-pilares">
 
 
-              <a href=""> <div id="pilar1" class="pilaresformat">  </div> </a> 
+              <a href="direciona.php?codigo=s1"> <div id="pilar1" class="pilaresformat">  </div> </a> 
+              <a href=""> <div id="pilar2" class="pilaresformat">  </div> </a> 
 
 
                 
