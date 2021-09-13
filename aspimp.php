@@ -26,6 +26,7 @@
                     </div>
                 </div>
             <style>
+
             #about{
                 padding: 0;
                 height: 85vh;
@@ -69,6 +70,7 @@
                 width: 1100px;
             }
             #questionarioButton {
+                
                 align-items: center;
                 justify-content: center;
             }
@@ -81,11 +83,29 @@
             }
             #btnSpeak{
                 height: 70px;
+                background:rgb(177, 177, 177);
+                pointer-events: none;
+                border-color: rgb(177, 177, 177);
+                -webkit-transition-duration: 0.8s; /* Safari */
+                
+                
             }
+
+            #btnSpeak a {
+
+                text-decoration: none;
+                color: whitesmoke;
+            }
+
+
+
+
+
+
             </style>
                 <div id="mae-pilares">
                     <div id="video">
-                        <video controls>
+                        <video id="meuVideo" controls>
                             <source src="assets/movies/aspimp.mp4" type="video/mp4">
                                 Your browser does not support the video tag.
                         </video>
@@ -99,7 +119,7 @@
                 <!-- Featured Project Row-->
                 <center>
                     <div id="questionarioButton">
-                        <a href="#about">  <button id="btnSpeak" class="btn btn-primary" > <img src="assets/img/question.png" width="30px" height="30px">  Responder Questionário </button> </a> 
+         <button id="btnSpeak" class="btn btn-primary" > <a  href="#about">  <img src="assets/img/question_white.png" width="30px" height="30px">  Responder Questionário </a>  </button> 
                     </div>  
                 </center>
                 </div>
@@ -116,6 +136,38 @@
         <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
         <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
 
-        <script src="ttsSHE.js"></script>
+
+        <script>
+
+        
+        
+        var meuVideo = document.querySelector('#meuVideo');
+
+    
+        var runningFun =  setInterval(function(){ 
+
+            var timeNow = meuVideo.currentTime;
+            var durationVideo = meuVideo.duration;
+            var timeFinish = durationVideo-15;
+
+
+            if (timeNow >= timeFinish ) {
+
+                document.querySelector("#btnSpeak").style.backgroundColor = "rgb(67, 67, 221)";
+                document.querySelector("#btnSpeak").style.pointerEvents = "auto";
+                clearInterval(runningFun);
+               
+            }
+
+
+         }, 1000);
+        
+       
+
+
+        
+         </script>
+
+      
     </body>
 </html>
