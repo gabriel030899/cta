@@ -42,7 +42,7 @@
                     margin-bottom: 10px;
                 }
                 #pilar1:hover {
-                    background: url("assets/img/aspimp_hover.png") no-repeat;
+                    background: url("assets/img/lpd_hover.png") no-repeat;
                     background-position:center;
                     background-size:contain;
                 }
@@ -52,25 +52,25 @@
                     background-size: contain;
                     width: 600px;
                     height: 200px;
-                    transform:rotateY(180deg) ;
+                   
                 }
                 #pilar1 a{
                     width: 100%;
                     height: 100%;
                 }
                 #pilar2 {
-                    background: url("assets/img/BBS.png") no-repeat;
+                    background: url("assets/img/bbs.png") no-repeat;
                     background-position:center;
                     background-size:contain;
-                    width: 580px;
-                    height: 180px;
+                    width: 600px;
+                    height: 200px;
                 }
                 #pilar2 a{
                     width: 100%;
                     height: 100%;
                 }
                 #pilar2:hover {
-                    background: url("assets/img/BBS_HOVER.png") no-repeat;
+                    background: url("assets/img/bbs_hover.png") no-repeat;
                     background-position:center;
                     background-size:contain;
                 }           
@@ -140,54 +140,7 @@
                  </div>
             </div>
         </section>
-        <section class="projects-section bg-light" id="projects">
-            <div class="container px-4 px-lg-5">
-                <!-- Featured Project Row-->
-                <div class="row gx-0 mb-4 mb-lg-5 align-items-center">
-                    <div class="col-xl-4 col-lg-5">
-                        <div class="featured-text text-center text-lg-left">
-                            <h4>Pilar MA</h4>
-                            <p class="text-black-50 mb-0">Breve descrição do pilar MA</p>
-                            
-                        </div>
-                    </div>
-                    <div class="col-xl-4 col-lg-5">
-                        <div class="featured-text text-center text-lg-left">
-                            <h4>Pilar MP</h4>
-                            <p class="text-black-50 mb-0">Breve descrição do pilar MP</p>
-                            
-                        </div>
-                    </div>
-                      <div class="col-xl-4 col-lg-5">
-                        <div class="featured-text text-center text-lg-left">
-                            <h4>SHE</h4>
-                            <p class="text-black-50 mb-0">Breve descrição do pilar SHE</p>
-                            
-                        </div>
-                    </div>
-                </div>
-                 <div class="row gx-0 mb-4 mb-lg-5 align-items-center"> 
-                    <div class="col-xl-4 col-lg-5">
-                        <div class="featured-text text-center text-lg-left">
-                            <h4>Pilar Qualidade</h4>
-                            <p class="text-black-50 mb-0">Breve descrição do pilar Qualidade</p>
-                        </div>
-                    </div>
-                    <div class="col-xl-4 col-lg-5">
-                        <div class="featured-text text-center text-lg-left">
-                            <h4>Pilar MEGA</h4>
-                            <p class="text-black-50 mb-0">Breve descrição do pilar MEGA</p>
-                        </div>
-                    </div>
-                    <div class="col-xl-4 col-lg-5">
-                        <div class="featured-text text-center text-lg-left">
-                            <h4>Pilar ET</h4>
-                            <p class="text-black-50 mb-0">Breve descrição do pilar ET</p>
-                        </div>
-                    </div>
-                 </div> 
-            </div>
-        </section>
+
         <!-- Footer-->
         <footer class="footer bg-black small text-center text-white-50"><div class="container px-4 px-lg-5">Copyright &copy;  2021</div></footer>
         <!-- Bootstrap core JS-->

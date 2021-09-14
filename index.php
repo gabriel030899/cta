@@ -162,7 +162,8 @@
             #carouselExampleControls{
                 margin-top:30px;
             }
-            
+
+
             
             </style>
 
@@ -199,7 +200,8 @@
                             <p class="text-black-50 mb-0">Principais Destaques</p>
                         </div>
                     </div>
-                    
+
+                <?php include "robo_include.php"; ?>
                     
                     
 <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">

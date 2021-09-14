@@ -247,7 +247,7 @@
                     <div class="col-xl-4 col-lg-5">
                         <div class="featured-text text-center text-lg-left">
                             <h4>Pilar MA</h4>
-                            <p class="text-black-50 mb-0">Breve descrição do pilar MA</p>
+                            <p class="text-black-50 mb-0">Atingir um processo confiável com perda zero liderados por um time de operadores autônomos. </p>
                             
                         </div>
 
@@ -256,7 +256,8 @@
                                 <div class="col-xl-4 col-lg-5">
                         <div class="featured-text text-center text-lg-left">
                             <h4>Pilar MP</h4>
-                            <p class="text-black-50 mb-0">Breve descrição do pilar MP</p>
+                            <p class="text-black-50 mb-0">Capacitar técnicos e operadores para maximizar a confiabilidade dos equipamentos a um custo ideal, a fim de entregar as necessidades do negócio.
+</p>
                             
                         </div>
 
@@ -265,7 +266,8 @@
                       <div class="col-xl-4 col-lg-5">
                         <div class="featured-text text-center text-lg-left">
                             <h4>SHE</h4>
-                            <p class="text-black-50 mb-0">Breve descrição do pilar SHE</p>
+                            <p class="text-black-50 mb-0">Possibilitar a transferência de conhecimento das rotinas SHE para os níveis operacionais e guiar os demais Pilares buscando a eliminação das perdas de SHE.
+</p>
                             
                         </div>
 
@@ -280,7 +282,7 @@
                                       <div class="col-xl-4 col-lg-5">
                         <div class="featured-text text-center text-lg-left">
                             <h4>Pilar Qualidade</h4>
-                            <p class="text-black-50 mb-0">Breve descrição do pilar Qualidade</p>
+                            <p class="text-black-50 mb-0">Capacitar para entregar produtos livres de defeito, alta qualidade e serviços que satisfaçam as expectativas dos consumidores, Inspirar pessoas a pensar e atuar em e com qualidade.</p>
                             
                         </div>
 
@@ -289,7 +291,8 @@
                                                        <div class="col-xl-4 col-lg-5">
                         <div class="featured-text text-center text-lg-left">
                             <h4>Pilar MEGA</h4>
-                            <p class="text-black-50 mb-0">Breve descrição do pilar MEGA</p>
+                            <p class="text-black-50 mb-0">Habilitar nossas pessoas para resolver problemas, a fim de alcançar os objetivos de negócio. Fornecemos metodologias que inspiram e engajam-nas na identificação dos problemas relevantes e eliminação das causas raiz.
+</p>
                             
                         </div>
 
@@ -298,7 +301,7 @@
                                                        <div class="col-xl-4 col-lg-5">
                         <div class="featured-text text-center text-lg-left">
                             <h4>Pilar ET</h4>
-                            <p class="text-black-50 mb-0">Breve descrição do pilar ET</p>
+                            <p class="text-black-50 mb-0">Ajuda a identificar quais as competências certas para desenvolver e o momento certo para um desenvolvimento continuo de cada uma dessas competências de acordo com aquilo que vai ajudar mais nas entregas do negócio. </p>
                             
                         </div>
 

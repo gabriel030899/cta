@@ -13,7 +13,7 @@ btnSpeak.addEventListener('click', () => {
   msg.volume = 1; //define o volume do áudio (de 0 a 1)
   msg.rate = 1; // define a velocidade do áudio (0.1 a 1)
   msg.pitch = 1.5; // define o tom em que o áudio é falado ( de 0 a 2)
-  msg.text = ".. Esse é o novo Centro de Treinamento da Nestlé  de São José do Rio Pardo. Aqui você vai aprender um pouco sobre todos os Pilares. Treinamentos. Cursos e ferramentas. Aproveite e acumule pontos nessa sua jornada.. ";
+  msg.text = "Esse é o novo Centro de Treinamento da Nestlé de São José do Rio Pardo, Aqui você vai aprender um pouco sobre todos os Pilares, Treinamentos, Cursos e ferramentas. Aproveite!!";
   
   
   const voice = speaks[0];

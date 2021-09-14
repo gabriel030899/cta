@@ -26,7 +26,7 @@
         </div>
         
         <div class="iconeshome">
-            <a href=""><img id="backicon" src="assets/img/back.png" width="64px" height="64px" alt="Voltar"></a>
+            <a href="pilares.php"><img id="backicon" src="assets/img/back.png" width="64px" height="64px" alt="Voltar"></a>
             <a href=""><img id="homeicon" src="assets/img/home.png" width="64px" height="64px" alt="Home"></a>
         </div>
 
