@@ -119,7 +119,17 @@
                     <p>Conheça melhor a trilha de Manutenção Autônoma:</p>
                 </div>
                 <div class="trilhavideo">
-                    <img src="assets/img/video.png" alt="Video">
+
+                    
+
+                    <video width="900" height="307" controls autoplay>
+
+                    <source src="assets/movies/ma_movie.mp4" type="video/mp4">
+  
+                    Your browser does not support the video tag.
+                   
+                </video>
+
                 </div>
                 <div class="trilhabotao">
                     <a href="#passo1"><button type="button" onclick="openUniverse()">Clique aqui e comece sua Jornada!</button></a>
