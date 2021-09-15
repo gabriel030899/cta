@@ -64,9 +64,12 @@ footer{
 }
 .trilhavideo{
     height: 500px;
-    width: 900px;
+    width: auto;
     background-color: rgba(108, 160, 255, 0.384);
     border: 3px solid rgba(81, 197, 218, 0.555);
+    border-radius: 10px;
+}
+.trilhavideo video{
     border-radius: 10px;
 }
 .trilhabotao{

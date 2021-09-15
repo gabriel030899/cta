@@ -1,0 +1,272 @@
+.bbs{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-flow: column;
+    background: transparent url('../assets/img/bbsmodelo.png') no-repeat center;
+    background-size: contain;
+    height: 750px;
+}
+.area{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-flow: column;
+}
+.area_options{
+    display: flex;
+    flex-flow: row;
+    justify-content: flex-start;
+    align-items: center;
+    height: 40px;
+    width: 630px;
+    margin-top: 125px;
+}
+.checkbox1{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 200px;
+    padding: 0 0 0 21px;
+}
+.checkbox1 input[type=checkbox] {
+    transform: scale(2);
+}
+.checkbox2{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 170px;
+    padding: 0 0 0 4px;
+}
+.checkbox2 input[type=checkbox] {
+    transform: scale(2);
+}
+.checkbox3{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0 0 0 8px;
+}
+.checkbox3 input[type=checkbox] {
+    transform: scale(2);
+}
+.tipo_obs{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-flow: column;
+    width: 630px;
+    height: 110px;
+    margin: 42px 0 0 0;
+}
+.comp_bbs_options{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row;
+    height: 40px;
+}
+.checkbox4{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 270px;
+    padding: 0 0 0 27px;
+}
+.checkbox4 input[type=checkbox] {
+    transform: scale(2);
+}
+.checkbox5{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0 0 0 8px;
+    width: 100px;
+}
+.checkbox5 input[type=checkbox] {
+    transform: scale(2);
+}
+.input_sap{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 22px 0 0 10px;
+}
+.input_sap input{
+    width: 220px;
+    height: 25px;
+}
+.comp_bbs_options2{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex-flow: row;
+    height: 55px;
+}
+.checkbox6{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 0 0 0 20px;
+    width: 250px;
+}
+.checkbox6 input[type=checkbox] {
+    transform: scale(2);
+}
+.checkbox7{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 0 0 0 27px;
+    width: 180px;
+}
+.checkbox7 input[type=checkbox] {
+    transform: scale(2);
+}
+.checkbox8{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 0 0 0 19px;
+}
+.checkbox8 input[type=checkbox] {
+    transform: scale(2);
+}
+.setor_obs{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-flow: column;
+    width: 630px;
+    height: 275px;
+    margin: 27px 0 0 0;
+}
+.input1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3px 0 0 180px;
+}
+.input1 input{
+    width: 440px;
+    height: 25px;
+}
+.input2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3px 0 0 191px;
+}
+.input2 input{
+    width: 429px;
+    height: 25px;
+}
+.input3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px 0 0 10px;
+}
+.input3 textarea{
+    width: 610px;
+    height: 60px;
+    font-size: 13px;
+}
+.input4{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 0 0 10px;
+}
+.input4 textarea{
+    width: 610px;
+    height: 40px;
+    font-size: 13px;
+}
+.input5{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 23px 0 0 10px;
+}
+.input5 textarea{
+    width: 610px;
+    height: 20px;
+    font-size: 13px;
+}
+.observador{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-flow: column;
+    width: 630px;
+    height: auto;
+}
+.obs_nome{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 5px 0 0 72px;
+}
+.obs_nome input{
+    width: 548px;
+    height: 20px;
+    font-size: 13px;
+}
+.sapsetor{
+    display: flex;
+}
+.obs_sap{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 2px 0 0 85px;
+}
+.obs_sap input{
+    width: 217px;
+    height: 30px;
+    font-size: 13px;
+}
+.obs_setor{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 2px 0 0 75px;
+}
+.obs_setor input{
+    width: 243px;
+    height: 30px;
+    font-size: 13px;
+}
+.turnodata{
+    display: flex;
+}
+.obs_turno{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 9px 0 0 113px;
+}
+.obs_turno input[type=checkbox] {
+    transform: scale(1.6);
+}
+#manha{
+    margin: 0 50px 0 0;
+}
+#tarde{
+    margin: 0 50px 0 12px;
+}
+#noite{
+    margin: 0 50px 0 10px;
+}
+.obr_data{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 10px 0 0 60px;
+}
+.obr_data input{
+    width: 150px;
+    height: 20px;
+}
