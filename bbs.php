@@ -26,8 +26,10 @@
                         </div>
                     </div>
 
-                    <div id="mae-pilares">
-                                      
+                    <div id="bbs_conteudo">
+                        <div class="bbs_button">
+                            <a href="">Clique aqui e Pratique!</a>
+                        </div>
                     </div>                
                 </div>
             </section>
@@ -37,7 +39,42 @@
             <!-- Projects-->
             <section class="projects-section bg-light" id="projects">
                 <div class="container px-4 px-lg-5">
-                    <!-- Featured Project Row-->
+                    <div class="area">
+                        <h3>Assinale abaixo apenas "uma" área relacionada à observação</h3>
+                        <div class="area_options">
+                            <input type="radio">
+                            <label for="">Seg. Industrial</label>
+                            <input type="radio">
+                            <label for="">Meio Ambiente</label>
+                            <input type="radio">
+                            <label for="">Qualidade / Seg. Alimentar</label>
+                        </div>
+                    </div>
+                    <div class="tipo_obs">
+                        <h3>Assinale abaixo apenas "um" tipo de observação</h3>
+                        <div class="comport_bbs">
+                            <div class="comp_bbs_title">
+                                <h4>Comportamento BBS</h4>
+                            </div>
+                            <div class="comp_bbs_options">
+                                <input type="text">
+                                <label for="">Corrigido (Ato Inseguro)</label>
+                                <input type="number">
+                                <label for="">Reforçado</label>
+                            </div>
+                        </div>
+                        <div class="relatos_bbs">
+                            <h4>Comportamento BBS</h4>
+                            <div class="comp_bbs_options">
+                                <input type="text">
+                                <label for="">Incidente / Quase Acidente</label>
+                                <input type="number">
+                                <label for="">Cond.Insegura</label>
+                                <input type="number">
+                                <label for="">Cond.Ergonomica</label>
+                            </div>
+                        </div>
+                    </div>
                     
                 </div>
             </section>
