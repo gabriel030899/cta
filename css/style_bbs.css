@@ -27,6 +27,7 @@
     background-color: rgb(0, 110, 255);
     -webkit-transition: 300ms ease-in-out;
 }
+
 .bbs{
     display: flex;
     justify-content: flex-start;
@@ -35,6 +36,18 @@
     background: transparent url('../assets/img/bbsmodelo.png') no-repeat center;
     background-size: contain;
     height: 750px;
+}
+.bbs input, textarea{
+    outline: 0;
+}
+.area_selecionada{
+    display: flex;
+    position: absolute;
+    right: 0;
+    margin: 115px 160px 0 0;
+    background-color: rgba(144, 238, 144, 0.507);
+    padding: 5px;
+    border-radius: 10px;
 }
 .area{
     display: flex;
@@ -79,6 +92,24 @@
 }
 .checkbox3 input[type=checkbox] {
     transform: scale(2);
+}
+.tipo_observacao{
+    display: flex;
+    position: absolute;
+    left: 0;
+    margin: 170px 0 0 60px;
+    background-color: rgba(229, 255, 0, 0.507);
+    padding: 5px;
+    border-radius: 10px;
+}
+.tipo_observacao2{
+    display: flex;
+    position: absolute;
+    left: 0;
+    margin: 250px 0 0 200px;
+    background-color: rgba(229, 255, 0, 0.507);
+    padding: 5px;
+    border-radius: 10px;
 }
 .tipo_obs{
     display: flex;
@@ -162,6 +193,15 @@
 .checkbox8 input[type=checkbox] {
     transform: scale(2);
 }
+.observacoes{
+    display: flex;
+    position: absolute;
+    right: 0;
+    margin: 330px 190px 0 0;
+    background-color: rgba(0, 183, 255, 0.411);
+    padding: 5px;
+    border-radius: 10px;
+}
 .setor_obs{
     display: flex;
     justify-content: flex-start;
@@ -223,6 +263,15 @@
     width: 610px;
     height: 20px;
     font-size: 13px;
+}
+.dados_observador{
+    display: flex;
+    left: 0;
+    position: absolute;
+    margin: 610px 0 0 170px;
+    background-color: rgba(177, 177, 177, 0.411);
+    padding: 5px;
+    border-radius: 10px;
 }
 .observador{
     display: flex;

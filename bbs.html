@@ -44,6 +44,9 @@
             <section class="projects-section bg-light" id="projects">
                 <div class="container px-4 px-lg-5">
                     <div class="bbs" id="bbs_model">
+                        <div class="area_selecionada">
+                            <h3>1- Selecione a área relacionada.</h3>
+                        </div>
                         <div class="area">
                             <div class="area_options">
                                 <div class="checkbox1">
@@ -56,6 +59,12 @@
                                     <input type="checkbox" id="qualidade_alimentar">
                                 </div>                                
                             </div>
+                        </div>
+                        <div class="tipo_observacao">
+                            <h3>2- Selecione o tipo de comportamento.</h3>
+                        </div>
+                        <div class="tipo_observacao2">
+                            <h3>3- Selecione o tipo de relato.</h3>
                         </div>
                         <div class="tipo_obs">
                             <div class="comp_bbs_options">
@@ -81,6 +90,9 @@
                                 </div>
                             </div>
                         </div>
+                        <div class="observacoes">
+                            <h3>4- Preencha todos os campos <br>de observação.</h3>
+                        </div>
                         <div class="setor_obs">
                             <div class="input1">
                                 <input type="text" id="setor_observado">
@@ -97,6 +109,9 @@
                             <div class="input5">
                                 <textarea id="sug_melhoria"></textarea>
                             </div>
+                        </div>
+                        <div class="dados_observador">
+                            <h3>5- Preencha todos os dados do <br>observador.</h3>
                         </div>
                         <div class="observador">
                             <div class="obs_nome">
