@@ -1,3 +1,32 @@
+.bbs_conteudo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.bbs_button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+}
+.bbs_button a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(110, 173, 255);
+    width: 300px;
+    height: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    color: lightcyan!important;
+    font-size: 20px;
+    text-decoration: none!important;
+    -webkit-transition: 300ms ease-in-out;
+}
+.bbs_button a:hover{
+    background-color: rgb(0, 110, 255);
+    -webkit-transition: 300ms ease-in-out;
+}
 .bbs{
     display: flex;
     justify-content: flex-start;
