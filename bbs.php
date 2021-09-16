@@ -19,15 +19,19 @@
         </head>
         <body onlo id="page-top">
             <!-- About-->
+            <div class="conclusao">
+                <h4>- Acompanhe sua progressão(%)</h4>
+            </div>
+            <div class="outbar">
+                <div class="progress_bar">
+                    
+                </div>
+            </div>
+
             <section class="projects-section bg-light" id="about">
                 <div class="container px-4 px-lg-5">
                     <div class="row gx-4 gx-lg-5 justify-content-center">
 
-                        <div class="outbar">
-                            <div class="progress_bar">
-
-                            </div>
-                        </div>
 
                         <div class="bbs_button">
                             <a id="btnSpeak1" href="#conhecer_bbs">Vamos Começar</a>
@@ -144,16 +148,11 @@
                             </div>
 
                             <div id="ppt7">
-
                                 <img src="assets/img/presentationBBS9.png">
-
                             </div>
-
-                             <!-- Apresentação 10  -->
-
                              <!-- Button Load 10  -->
                             <div class="bbs_button">
-                            <a href="#ppt8">Avançar</a>
+                            <a id="btnSpeak10" href="#ppt8">Avançar</a>
                             </div>
 
                             <div id="ppt8">
@@ -166,7 +165,7 @@
 
                              <!-- Button Load 11  -->
                             <div class="bbs_button">
-                            <a href="#ppt9">Avançar</a>
+                            <a id="btnSpeak11" href="#ppt9">Avançar</a>
                             </div>
 
                             <div id="ppt9">
@@ -179,7 +178,7 @@
 
                              <!-- Button Load 12  -->
                             <div class="bbs_button">
-                            <a href="#ppt10">Avançar</a>
+                            <a id="btnSpeak12" href="#ppt10">Avançar</a>
                             </div>
 
                             <div id="ppt10">
@@ -199,7 +198,7 @@
 
                     <div id="bbs_conteudo">
                         <div class="bbs_button">
-                            <a href="#bbs_model">Clique aqui e Pratique!</a>
+                            <a id="bbs_model_button" href="#bbs_model">Clique aqui e Pratique!</a>
                         </div>
                     </div>                
                 </div>

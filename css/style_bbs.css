@@ -1,19 +1,84 @@
 .outbar{
     height: 700px;
-    width: 10px;
+    width: 25px;
     background-color: #ccc;
     position: fixed;
     left: 0;
-    margin: 0 0 0 50px;
+    margin: 120px 0 0 25px;
+    border-radius: 50px;
+    border: 2px solid rgb(141, 141, 141);
 }
 .progress_bar{
     position: absolute;
     width: 100%;
-    background-color: rgb(89, 255, 83);
-    animation: progress_animation 3s;
+    background-color: rgb(68, 224, 62);
+    border-radius: 50px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
 }
-@keyframes progress_animation{
+.progress_bar p{
+    color: rgba(0, 0, 0, 0.733);
+    font-weight: 700;
+    font-size: 12px;
+}
+.conclusao{
+    position: fixed;
+    left: 0;
+    margin: 120px 0 0 70px;
+    color: rgb(141, 141, 141);
+}
+
+@keyframes progress_animation1{
     0%{ height: 0%;}
+    100%{ height: 7%;}
+}
+@keyframes progress_animation2{
+    0%{ height: 7%;}
+    100%{ height: 14%;}
+}
+@keyframes progress_animation3{
+    0%{ height: 14%;}
+    100%{ height: 21%;}
+}
+@keyframes progress_animation4{
+    0%{ height: 21%;}
+    100%{ height: 28%;}
+}
+@keyframes progress_animation5{
+    0%{ height: 28%;}
+    100%{ height: 35%;}
+}
+@keyframes progress_animation6{
+    0%{ height: 35%;}
+    100%{ height: 42%;}
+}
+@keyframes progress_animation7{
+    0%{ height: 42%;}
+    100%{ height: 49%;}
+}
+@keyframes progress_animation8{
+    0%{ height: 49%;}
+    100%{ height: 56%;}
+}
+@keyframes progress_animation9{
+    0%{ height: 56%;}
+    100%{ height: 63%;}
+}
+@keyframes progress_animation10{
+    0%{ height: 63%;}
+    100%{ height: 70%;}
+}
+@keyframes progress_animation11{
+    0%{ height: 70%;}
+    100%{ height: 77%;}
+}
+@keyframes progress_animation12{
+    0%{ height: 77%;}
+    100%{ height: 84%;}
+}
+@keyframes progress_animation13{
+    0%{ height: 84%;}
     100%{ height: 100%;}
 }
 .bbs_conteudo{
