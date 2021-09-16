@@ -80,6 +80,8 @@ function growProgressBar13(){
     document.querySelector('.progress_bar').innerHTML = "<p>100%</p>";
 }
 
+
+
 // BUSCAR BOTAO DE CONCLUSÃO PARA ABRIR MODAL
 conc_button.addEventListener("click", openConcModal);
 close_modal_button.addEventListener("click", closeConcModal);
