@@ -1,3 +1,4 @@
+// BUSCA BOTOES PARA SUBIR PROGRESSÃO
 btnSpeak1.addEventListener("click", growProgressBar1);
 btnSpeak2.addEventListener("click", growProgressBar2);
 btnSpeak3.addEventListener("click", growProgressBar3);
@@ -12,6 +13,7 @@ btnSpeak11.addEventListener("click", growProgressBar11);
 btnSpeak12.addEventListener("click", growProgressBar12);
 bbs_model_button.addEventListener("click", growProgressBar13);
 
+// FUNÇÕES PARA SUBIR PROGRESSAO
 function growProgressBar1(){
     document.querySelector('.progress_bar').style.animation = "progress_animation1 1s";
     document.querySelector('.progress_bar').style.height = "7%";
@@ -76,4 +78,16 @@ function growProgressBar13(){
     document.querySelector('.progress_bar').style.animation = "progress_animation13 1s";
     document.querySelector('.progress_bar').style.height = "100%";
     document.querySelector('.progress_bar').innerHTML = "<p>100%</p>";
+}
+
+// BUSCAR BOTAO DE CONCLUSÃO PARA ABRIR MODAL
+conc_button.addEventListener("click", openConcModal);
+close_modal_button.addEventListener("click", closeConcModal);
+// ABRIR MODAL DE CONCLUSÃO
+function openConcModal(){
+    document.querySelector('.modal_background').style.display = "flex";
+}
+// FECHAR MODAL DE CONCLUSÃO
+function closeConcModal(){
+    document.querySelector('.modal_background').style.display = "none";
 }

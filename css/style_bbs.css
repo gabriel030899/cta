@@ -1,34 +1,3 @@
-.outbar{
-    height: 700px;
-    width: 35px;
-    background-color: #ccc;
-    position: fixed;
-    left: 0;
-    margin: 120px 0 0 20px;
-    border-radius: 50px;
-    border: 2px solid rgb(141, 141, 141);
-}
-.progress_bar{
-    position: absolute;
-    width: 100%;
-    background-color: rgb(68, 224, 62);
-    border-radius: 50px;
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
-}
-.progress_bar p{
-    color: rgba(0, 0, 0, 0.733);
-    font-weight: 700;
-    font-size: 12px;
-}
-.conclusao{
-    position: fixed;
-    left: 0;
-    margin: 120px 0 0 70px;
-    color: rgb(141, 141, 141);
-}
-
 @keyframes progress_animation1{
     0%{ height: 0%;}
     100%{ height: 7%;}
@@ -81,6 +50,36 @@
     0%{ height: 84%;}
     100%{ height: 100%;}
 }
+.outbar{
+    height: 700px;
+    width: 35px;
+    background-color: #ccc;
+    position: fixed;
+    left: 0;
+    margin: 120px 0 0 20px;
+    border-radius: 50px;
+    border: 2px solid rgb(141, 141, 141);
+}
+.progress_bar{
+    position: absolute;
+    width: 100%;
+    background-color: rgb(68, 224, 62);
+    border-radius: 50px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+.progress_bar p{
+    color: rgba(0, 0, 0, 0.733);
+    font-weight: 700;
+    font-size: 12px;
+}
+.conclusao{
+    position: fixed;
+    left: 0;
+    margin: 120px 0 0 70px;
+    color: rgb(141, 141, 141);
+}
 .bbs_conteudo{
     display: flex;
     justify-content: center;
@@ -110,9 +109,96 @@
     background-color: rgb(0, 110, 255);
     -webkit-transition: 300ms ease-in-out;
 }
-
-
-
+#conc_button{
+    margin-top: 40px;
+}
+#conc_button a{
+    background-color: rgba(14, 185, 14, 0.774);
+}
+.modal_background{
+    position: fixed;
+    background-color: rgba(109, 109, 109, 0.486);
+    width: 100vw;
+    height: 100vh;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.conc_modal{
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-start;
+    align-items: center;
+    border: 2px solid black;
+    width: 700px;
+    height: 300px;
+}
+.modal_title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 70px;
+    background-color: rgb(59, 111, 255);
+    color: white;
+}
+.modal_title h3{
+    width: 90%;
+    text-align: center;
+}
+.modal_title span{
+    font-size: 20px;
+    text-align: center;
+    cursor: pointer;
+    transition: 100ms ease-in-out;
+}
+.modal_title span:hover{
+    color: rgb(20, 20, 160);
+    transition: 100ms ease-in-out;
+}
+.modal_content{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-flow: column;
+    padding: 15px 10px 10px 10px;
+    background-color: rgb(236, 241, 255);
+    width: 100%;
+    height: 100%;
+}
+.modal_content p{
+    margin: 5px 0;
+    font-size: 25px;
+}
+.modal_button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+.modal_button a{
+    background-color: rgb(7, 172, 7);
+    border: 0;
+    outline: 0;
+    border-radius: 10px;
+    width: 150px;
+    height: 50px;
+    transition: 200ms ease-in-out;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+}
+.modal_button a:hover{
+    background-color: rgb(22, 126, 22);
+    transition: 200ms ease-in-out;
+    text-decoration: none;
+    color: white;
+}
 .bbs{
     display: flex;
     justify-content: flex-start;
