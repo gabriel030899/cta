@@ -105,7 +105,7 @@
                 </style>
                     <div id="mae-pilares">
                         <div id="video">
-                            <video id="meuVideo" controls>
+                            <video id="meuVideo" controls autoplay>
                                 <source src="assets/movies/aspimp.mp4" type="video/mp4">
                                     Your browser does not support the video tag.
                             </video>

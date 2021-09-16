@@ -146,6 +146,26 @@ catch (Exception $e) {
    
 }
 
+if ($codigo == "s2") {
+    
+  try {
+       
+       $sql = "INSERT INTO redirect_data (url_atual,url_destino) 
+   VALUES ('PILAR SHE', 'BBS E BBNIMS')";	
+   
+   $stmt = $Conexao->query($sql);
+ 
+  
+   } 
+   
+catch (Exception $e) {
+    var_dump($e);
+}
+   
+?> <html> <meta http-equiv="refresh" content="0;url=bbs.php"></html> <?php
+   
+}
+
 else {
     
     

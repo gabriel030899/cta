@@ -136,7 +136,7 @@
 
                 <div id="mae-pilares">
                     <div id="pilar1" class="pilaresformat"><a href="direciona.php?codigo=s1"></a></div>
-                    <div id="pilar2" class="pilaresformat"><a href=""></a></div> 
+                    <div id="pilar2" class="pilaresformat"><a href="direciona.php?codigo=s2"></a></div> 
                  </div>
             </div>
         </section>
