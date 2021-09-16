@@ -22,9 +22,11 @@
             <section class="projects-section bg-light" id="about">
                 <div class="container px-4 px-lg-5">
                     <div class="row gx-4 gx-lg-5 justify-content-center">
-                        <div class="col-lg-8" id="titlediv">
 
-                
+                        <div class="outbar">
+                            <div class="progress_bar">
+
+                            </div>
                         </div>
 
                         <div class="bbs_button">
@@ -329,5 +331,7 @@
             <script src="ttsBBS_PPT5.js"></script>
             <script src="ttsBBS_PPT6.js"></script>
             <script src="ttsBBS_PPT7.js"></script>
+
+            <script src="js/script_bbs.js"></script>
         </body>
     </html>
