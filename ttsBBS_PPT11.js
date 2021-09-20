@@ -1,4 +1,4 @@
-var btnSpeak = document.querySelector('#btnSpeak3');
+var btnSpeak = document.querySelector('#btnSpeak13');
 
 speaks = [
   {
@@ -13,7 +13,7 @@ btnSpeak.addEventListener('click', () => {
   msg.volume = 1; //define o volume do áudio (de 0 a 1)
   msg.rate = 1; // define a velocidade do áudio (0.1 a 1)
   msg.pitch = 1.5; // define o tom em que o áudio é falado ( de 0 a 2)
-  msg.text = "Opaa, Fico Feliz que vai acompanhar esse preenchimento comigo e logo após pode realizar a prática, Vamos lá, no campo de área relacionada, temos as seguintes opções: Segurança Industrial, Meio Ambiente, ou Qualidade e Segurança Alimentar.";
+  msg.text = "É isso aí!, Sensacional!! Você foi muito bem,  e eu estou méga robô feliz!" ;
   
   
   const voice = speaks[0];

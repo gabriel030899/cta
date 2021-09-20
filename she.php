@@ -34,6 +34,8 @@
                     </div>
                 </div>
 
+                <?php include "botao_back.php"; ?>
+
                 <style>
                 #about{
                     height: 100vh;
