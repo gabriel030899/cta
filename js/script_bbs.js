@@ -85,10 +85,12 @@ function growProgressBar13(){
 // BUSCAR BOTAO DE CONCLUSÃO PARA ABRIR MODAL
 conc_button.addEventListener("click", openConcModal);
 close_modal_button.addEventListener("click", closeConcModal);
+
 // ABRIR MODAL DE CONCLUSÃO
 function openConcModal(){
     document.querySelector('.modal_background').style.display = "flex";
 }
+
 // FECHAR MODAL DE CONCLUSÃO
 function closeConcModal(){
     document.querySelector('.modal_background').style.display = "none";

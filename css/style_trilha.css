@@ -101,9 +101,8 @@ footer{
 }
 #foguete{
     position: fixed;
-    width: 100px;
+    width: 450px;
     height: auto;
-    transform: rotate(-50deg);
     display: none;
     margin-top: 500px;
 }
