@@ -601,3 +601,28 @@ footer{
 #ferramentasp7 a:hover{
     color: rgb(213, 235, 255);
 }
+/* PLANETAS */
+#planeta1{
+    position: absolute;
+    left: 20rem;
+    width: 800px;
+    height: auto;
+}
+#planeta2{
+    position: absolute;
+    right: 30rem;
+    width: 480px;
+    height: auto;
+}
+#planeta3{
+    position: absolute;
+    left: 30rem;
+    width: 480px;
+    height: auto;
+}
+#planeta4{
+    position: absolute;
+    right: 25rem;
+    width: 460px;
+    height: auto;
+}
