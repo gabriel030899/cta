@@ -605,7 +605,7 @@ footer{
 #planeta1{
     position: absolute;
     left: 20rem;
-    width: 800px;
+    width: 830px;
     height: auto;
 }
 #planeta2{
@@ -624,5 +624,23 @@ footer{
     position: absolute;
     right: 25rem;
     width: 460px;
+    height: auto;
+}
+#planeta5{
+    position: absolute;
+    left: 31rem;
+    width: 450px;
+    height: auto;
+}
+#planeta6{
+    position: absolute;
+    right: 30rem;
+    width: 450px;
+    height: auto;
+}
+#planeta7{
+    position: absolute;
+    left: 31rem;
+    width: 450px;
     height: auto;
 }
