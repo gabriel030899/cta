@@ -20,7 +20,7 @@
     </head>
     <body>
         <div class="foguetediv">
-            <img id="foguete" src="assets/img/foguete.png" alt="Foguete">
+            <img id="foguete" src="assets/img/foguetegif.gif.gif" alt="Foguete">
             <button id="buttonup" class="controller" type="button"><img src="assets/img/dirarrow.png" alt="^"></button>
             <button id="buttondown" class="controller" type="button"><img src="assets/img/dirarrow.png" alt="v"></button>
         </div>
