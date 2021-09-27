@@ -1,7 +1,8 @@
 $borderColor: rgba(81, 197, 218, 0.555);
+$menuBackground: rgba(72, 136, 255, 0.192);
 
-@mixin flexAdj($justify_content, $align_items, $flex_direction) {
-    display: flex;
+@mixin flexAdj($flex, $justify_content, $align_items, $flex_direction) {
+    display: $flex;
     justify-content: $justify_content;
     align-items: $align_items;
     flex-direction: $flex_direction;
@@ -10,6 +11,10 @@ $borderColor: rgba(81, 197, 218, 0.555);
     display: flex;
     justify-content: center;
     align-items: center;
+}
+body h2{
+    font-size:25px;
+    color: white; 
 }
 body {
     @include flexCenter();
@@ -39,13 +44,13 @@ footer{
     margin: 50px 60px 0 0;
 }
 .trilhatop{
-    @include flexAdj(flex-start, center, column);
+    @include flexAdj(flex, flex-start, center, column);
     width: 100vw;
     height: 100vh;
     padding: 50px;
 }
 .trilhainfo{
-    background-color: rgba(72, 136, 255, 0.192);
+    background-color: $menuBackground;
     width: 95vw;
     height: 90vh;
     padding: 20px;
@@ -53,10 +58,8 @@ footer{
     border-radius: 50px;
 }
 .trilhatop div{
-    display: flex;
+    @include flexCenter();
     flex-flow: column;
-    justify-content: center;
-    align-items: center;
 }
 .trilhatitulo h3{
     font-size: 50px;
@@ -73,7 +76,7 @@ footer{
 .trilhavideo{
     height: 500px;
     width: auto;
-    background-color: rgba(108, 160, 255, 0.384);
+    background-color: $menuBackground;
     border: 3px solid $borderColor;
     border-radius: 10px;
 }
@@ -100,9 +103,7 @@ footer{
     color: rgb(213, 235, 255);
 }
 .foguetediv{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flexCenter();
     width: 100vw;
     height: auto;
     margin-top: 10px;
@@ -128,9 +129,7 @@ footer{
 }
 #buttonup{
     margin: 850px 50px 20px 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flexCenter();
     width: 60px;
     height: 60px;
 }
@@ -140,9 +139,7 @@ footer{
 }
 #buttondown{
     margin: 970px 50px 0 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flexCenter();
     width: 60px;
     height: 60px;
 }
@@ -152,23 +149,16 @@ footer{
     width: auto;
 }
 #trilha {
+    @include flexAdj(none, flex-start, center, column);
     width: 100vw;
     height: auto;
-    display: none;
-    flex-flow: column;
-    justify-content: flex-start;
-    align-items: center;
 }
 .trilhaheader{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flexCenter();
     height: 8vh;
 }
 .nomepilar{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flexCenter();
     position: absolute;
     left: 0;
     margin: 0 0 0 70px;
@@ -178,9 +168,7 @@ footer{
     color: #fff;
 }
 .iconeshome{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flexCenter();
     position: absolute;
     right: 0;
     margin: 0 70px 0 0;
@@ -189,27 +177,18 @@ footer{
     margin: 0 0 0 20px;
 }
 .iconesp1{
-    display: flex;
+    @include flexAdj(flex, flex-start, center, row);
     width: 70vw;
     height: 800px;
-    justify-content: flex-start;
-    align-items: center;
 }
 .textp1{
-    display: flex;
-    flex-flow: column;
-    justify-content: center;
-    align-items: center;
+    @include flexAdj(flex, center, center, column);
     margin: 0 20px 0 0;
-    background-color: rgba(72, 136, 255, 0.192);
+    background-color: $menuBackground;
     border: 2px solid $borderColor;
     border-radius: 30px;
     padding: 5px;
     width: 300px;
-}
-.textp1 h2{
-    font-size:25px;
-    color: white;
 }
 #ferramentasp1{
     width: 100%;
@@ -220,9 +199,7 @@ footer{
 }
 #ferramentasp1 li{
     list-style: none;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
+    @include flexAdj(flex, flex-start, center, row);
     width: 100%;
     font-size: 15px;
     height: 70px;
@@ -238,9 +215,7 @@ footer{
     color: white;
     width: 90%;
     height: 100%;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
+    @include flexAdj(flex, flex-start, center, row);
     border-top: 0;
     border-bottom: 2px solid white;
     border-left: 0;
@@ -253,27 +228,18 @@ footer{
     border: 0!important;
 }
 .iconesp2{
-    display: flex;
+    @include flexAdj(flex, flex-end, center, row);
     width: 70vw;
     height: 800px;
-    justify-content: flex-end;
-    align-items: center;
 }
 .textp2{
-    display: flex;
-    flex-flow: column;
-    justify-content: flex-start;
-    align-items: center;
+    @include flexAdj(flex, flex-start, center, column);
     margin: 0 0 0 20px;
-    background-color: rgba(72, 136, 255, 0.192);
+    background-color: $menuBackground;
     border: 2px solid $borderColor;
     border-radius: 30px;
     padding: 5px;
     width: 300px;
-}
-.textp2 h2 {
-    font-size:25px;
-    color: white;
 }
 #ferramentasp2{
     width: 100%;
@@ -284,9 +250,7 @@ footer{
 }
 #ferramentasp2 li{
     list-style: none;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
+    @include flexAdj(flex, flex-start, center, row);
     width: 100%;
     font-size: 15px;
     height: 70px;
@@ -302,9 +266,7 @@ footer{
     color: white;
     width: 90%;
     height: 100%;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
+    @include flexAdj(flex, flex-start, center, row);
     border-top: 0;
     border-bottom: 2px solid white;
     border-left: 0;
@@ -324,20 +286,13 @@ footer{
     align-items: center;
 }
 .textp3{
-    display: flex;
-    flex-flow: column;
-    justify-content: center;
-    align-items: center;
+    @include flexAdj(flex, center, center, column);
     margin: 0 20px 0 0;
-    background-color: rgba(72, 136, 255, 0.192);
+    background-color: $menuBackground;
     border: 2px solid $borderColor;
     border-radius: 30px;
     padding: 5px;
     width: 300px;
-}
-.textp3 h2{
-    font-size:25px;
-    color: white;
 }
 #ferramentasp3{
     width: 100%;
@@ -348,9 +303,7 @@ footer{
 }
 #ferramentasp3 li{
     list-style: none;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
+    @include flexAdj(flex, flex-start, center, row);
     width: 100%;
     font-size: 15px;
     height: 45px;
@@ -366,35 +319,24 @@ footer{
     color: white;
     width: 90%;
     height: 100%;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
+    @include flexAdj(flex, flex-start, center, row);
 }
 #ferramentasp3 a:hover{
     color: rgb(213, 235, 255);
 }
 .iconesp4{
-    display: flex;
     width: 80vw;
     height: 800px;
-    justify-content: flex-end;
-    align-items: center;
+    @include flexAdj(flex, flex-end, center, row);
 }
 .textp4{
-    display: flex;
-    flex-flow: column;
-    justify-content: flex-start;
-    align-items: center;
+    @include flexAdj(flex, flex-start, center, column);
     margin: 0 0 0 20px;
-    background-color: rgba(72, 136, 255, 0.192);
+    background-color: $menuBackground;
     border: 2px solid $borderColor;
     border-radius: 30px;
     padding: 5px;
     width: 300px;
-}
-.textp4 h2 {
-    font-size:25px;
-    color: white;
 }
 #ferramentasp4{
     width: 100%;
@@ -405,9 +347,7 @@ footer{
 }
 #ferramentasp4 li{
     list-style: none;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
+    @include flexAdj(flex, flex-start, center, row);
     width: 100%;
     font-size: 15px;
     height: 45px;
@@ -423,9 +363,7 @@ footer{
     color: white;
     width: 90%;
     height: 100%;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
+    @include flexAdj(flex, flex-start, center, row);
     border-top: 0;
     border-bottom: 2px solid white;
     border-left: 0;
@@ -438,27 +376,18 @@ footer{
     border: 0!important;
 }
 .iconesp5{
-    display: flex;
     width: 70vw;
     height: 800px;
-    justify-content: flex-start;
-    align-items: center;
+    @include flexAdj(flex, flex-start, center, row);
 }
 .textp5{
-    display: flex;
-    flex-flow: column;
-    justify-content: center;
-    align-items: center;
+    @include flexAdj(flex, center, center, column);
     margin: 0 20px 0 0;
-    background-color: rgba(72, 136, 255, 0.192);
+    background-color: $menuBackground;
     border: 2px solid $borderColor;
     border-radius: 30px;
     padding: 5px;
     width: 300px;
-}
-.textp5 h2{
-    font-size:25px;
-    color: white;
 }
 #ferramentasp5{
     width: 100%;
@@ -469,9 +398,7 @@ footer{
 }
 #ferramentasp5 li{
     list-style: none;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
+    @include flexAdj(flex, flex-start, center, row);
     width: 100%;
     font-size: 15px;
     height: 45px;
@@ -487,35 +414,24 @@ footer{
     color: white;
     width: 90%;
     height: 100%;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
+    @include flexAdj(flex, flex-start, center, row);
 }
 #ferramentasp5 a:hover{
     color: rgb(213, 235, 255);
 }
 .iconesp6{
-    display: flex;
     width: 70vw;
     height: 800px;
-    justify-content: flex-end;
-    align-items: center;
+    @include flexAdj(flex, flex-end, center, row);
 }
 .textp6{
-    display: flex;
-    flex-flow: column;
-    justify-content: flex-start;
-    align-items: center;
+    @include flexAdj(flex, flex-start, center, column);
     margin: 0 0 0 20px;
-    background-color: rgba(72, 136, 255, 0.192);
+    background-color: $menuBackground;
     border: 2px solid $borderColor;
     border-radius: 30px;
     padding: 5px;
     width: 300px;
-}
-.textp6 h2 {
-    font-size:25px;
-    color: white;
 }
 #ferramentasp6{
     width: 100%;
@@ -526,9 +442,7 @@ footer{
 }
 #ferramentasp6 li{
     list-style: none;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
+    @include flexAdj(flex, flex-start, center, row);
     width: 100%;
     font-size: 15px;
     height: 45px;
@@ -544,35 +458,24 @@ footer{
     color: white;
     width: 90%;
     height: 100%;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
+    @include flexAdj(flex, flex-start, center, row);
 }
 #ferramentasp6 a:hover{
     color: rgb(213, 235, 255);
 }
 .iconesp7{
-    display: flex;
     width: 70vw;
     height: 800px;
-    justify-content: flex-start;
-    align-items: center;
+    @include flexAdj(flex, flex-start, center, row);
 }
 .textp7{
-    display: flex;
-    flex-flow: column;
-    justify-content: center;
-    align-items: center;
+    @include flexAdj(flex, flex-start, center, column);
     margin: 0 20px 0 0;
-    background-color: rgba(72, 136, 255, 0.192);
+    background-color: $menuBackground;
     border: 2px solid $borderColor;
     border-radius: 30px;
     padding: 5px;
     width: 300px;
-}
-.textp7 h2{
-    font-size:25px;
-    color: white;
 }
 #ferramentasp7{
     width: 100%;
@@ -583,9 +486,7 @@ footer{
 }
 #ferramentasp7 li{
     list-style: none;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
+    @include flexAdj(flex, flex-start, center, row);
     width: 100%;
     font-size: 15px;
     height: 45px;
@@ -601,10 +502,7 @@ footer{
     color: white;
     width: 90%;
     height: 100%;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-
+    @include flexAdj(flex, flex-start, center, row);
 }
 #ferramentasp7 a:hover{
     color: rgb(213, 235, 255);
