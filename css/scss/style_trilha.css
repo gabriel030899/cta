@@ -21,7 +21,7 @@ body {
           box-sizing: content-box;
   margin: 0;
   padding: 0;
-  background: black url("../assets/img/universo.jpg") no-repeat center;
+  background: black url("../../assets/img/universo.jpg") no-repeat center;
   background-repeat: repeat;
   background-attachment: fixed;
   background-size: 100% 100%;
@@ -138,7 +138,7 @@ footer {
 }
 
 .trilhabotao button:hover {
-  color: #d5ebff;
+  color: #b3ddff;
 }
 
 .foguetediv {
@@ -153,7 +153,6 @@ footer {
           align-items: center;
   width: 100vw;
   height: auto;
-  margin-top: 10px;
 }
 
 #foguete {
@@ -350,7 +349,7 @@ footer {
 }
 
 #ferramentasp1 li:hover {
-  background-color: rgba(71, 181, 255, 0.712);
+  background-color: rgba(123, 202, 255, 0.555);
   -webkit-transition: background 300ms ease-in-out;
   transition: background 300ms ease-in-out;
 }
@@ -380,7 +379,7 @@ footer {
 }
 
 #ferramentasp1 a:hover {
-  color: #d5ebff;
+  color: #b3ddff;
 }
 
 #mvppasso {
@@ -461,7 +460,7 @@ footer {
 }
 
 #ferramentasp2 li:hover {
-  background-color: rgba(71, 181, 255, 0.712);
+  background-color: rgba(123, 202, 255, 0.555);
   -webkit-transition: background 300ms ease-in-out;
   transition: background 300ms ease-in-out;
 }
@@ -491,7 +490,7 @@ footer {
 }
 
 #ferramentasp2 a:hover {
-  color: #d5ebff;
+  color: #b3ddff;
 }
 
 #plilpasso {
@@ -568,7 +567,7 @@ footer {
 }
 
 #ferramentasp3 li:hover {
-  background-color: rgba(71, 181, 255, 0.712);
+  background-color: rgba(123, 202, 255, 0.555);
   -webkit-transition: background 300ms ease-in-out;
   transition: background 300ms ease-in-out;
 }
@@ -594,7 +593,7 @@ footer {
 }
 
 #ferramentasp3 a:hover {
-  color: #d5ebff;
+  color: #b3ddff;
 }
 
 .iconesp4 {
@@ -671,7 +670,7 @@ footer {
 }
 
 #ferramentasp4 li:hover {
-  background-color: rgba(71, 181, 255, 0.712);
+  background-color: rgba(123, 202, 255, 0.555);
   -webkit-transition: background 300ms ease-in-out;
   transition: background 300ms ease-in-out;
 }
@@ -701,7 +700,7 @@ footer {
 }
 
 #ferramentasp4 a:hover {
-  color: #d5ebff;
+  color: #b3ddff;
 }
 
 #wpapasso {
@@ -782,7 +781,7 @@ footer {
 }
 
 #ferramentasp5 li:hover {
-  background-color: rgba(71, 181, 255, 0.712);
+  background-color: rgba(123, 202, 255, 0.555);
   -webkit-transition: background 300ms ease-in-out;
   transition: background 300ms ease-in-out;
 }
@@ -808,7 +807,7 @@ footer {
 }
 
 #ferramentasp5 a:hover {
-  color: #d5ebff;
+  color: #b3ddff;
 }
 
 .iconesp6 {
@@ -885,7 +884,7 @@ footer {
 }
 
 #ferramentasp6 li:hover {
-  background-color: rgba(71, 181, 255, 0.712);
+  background-color: rgba(123, 202, 255, 0.555);
   -webkit-transition: background 300ms ease-in-out;
   transition: background 300ms ease-in-out;
 }
@@ -911,7 +910,7 @@ footer {
 }
 
 #ferramentasp6 a:hover {
-  color: #d5ebff;
+  color: #b3ddff;
 }
 
 .iconesp7 {
@@ -988,7 +987,7 @@ footer {
 }
 
 #ferramentasp7 li:hover {
-  background-color: rgba(71, 181, 255, 0.712);
+  background-color: rgba(123, 202, 255, 0.555);
   -webkit-transition: background 300ms ease-in-out;
   transition: background 300ms ease-in-out;
 }
@@ -1014,7 +1013,7 @@ footer {
 }
 
 #ferramentasp7 a:hover {
-  color: #d5ebff;
+  color: #b3ddff;
 }
 
 /* PLANETAS */

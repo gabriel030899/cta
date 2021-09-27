@@ -13,7 +13,7 @@ body {
     box-sizing: content-box;
     margin:0;
     padding:0;
-    background: black url("../assets/img/universo.jpg") no-repeat center;
+    background: black url("../../assets/img/universo.jpg") no-repeat center;
     background-repeat: repeat;
     background-attachment: fixed;
     background-size: 100% 100%;
@@ -22,6 +22,7 @@ footer{
     margin:0;
     width:100vw;
 }
+// NAV MENU ICONS
 #backicon{
     position: fixed;
     right: 0;
@@ -34,6 +35,7 @@ footer{
     top: 0;
     margin: 50px 60px 0 0;
 }
+// TRILHA
 .trilhatop{
     @include flexAdj(flex, flex-start, center, column);
     width: 100vw;
@@ -78,7 +80,7 @@ footer{
 }
 .trilhabotao{
     height: 130px;
-    background-color: rgba(123, 202, 255, 0.555);
+    background-color: $hoverBackground;
     border: 2px solid $borderColor;
     border-radius: 30px;
     margin-top: 20px;
@@ -93,7 +95,7 @@ footer{
         border: none;
         
         &:hover{
-            color: rgb(213, 235, 255); 
+            color: rgb(179, 221, 255);
         }
     }
 }
@@ -101,7 +103,6 @@ footer{
     @include flexCenter();
     width: 100vw;
     height: auto;
-    margin-top: 10px;
 }
 #foguete{
     position: fixed;
@@ -202,7 +203,7 @@ footer{
         border-radius: 10px;
 
         &:hover{
-            background-color: rgba(71, 181, 255, 0.712);
+            background-color: $hoverBackground;
             transition: background 300ms ease-in-out;        
         }
     }
@@ -218,7 +219,7 @@ footer{
         border-right: 0;
 
         &:hover{
-            color: rgb(213, 235, 255);
+            color: $aHovers;
         }
     }
 }
@@ -256,7 +257,7 @@ footer{
         border-radius: 10px;
 
         &:hover{
-            background-color: rgba(71, 181, 255, 0.712);
+            background-color: $hoverBackground;
             transition: background 300ms ease-in-out;
         }
     }
@@ -272,7 +273,7 @@ footer{
         border-right: 0;
 
         &:hover{
-            color: rgb(213, 235, 255);
+            color: $aHovers;
         }
     }
 }
@@ -312,7 +313,7 @@ footer{
         border-radius: 10px;
 
         &:hover{
-            background-color: rgba(71, 181, 255, 0.712);
+            background-color: $hoverBackground;
             transition: background 300ms ease-in-out;        
         }
     }
@@ -324,7 +325,7 @@ footer{
         @include flexAdj(flex, flex-start, center, row);
 
         &:hover{
-            color: rgb(213, 235, 255);
+            color: $aHovers;
         }
     }
 }
@@ -359,7 +360,7 @@ footer{
         border-radius: 10px;
 
         &:hover{
-            background-color: rgba(71, 181, 255, 0.712);
+            background-color: $hoverBackground;
             transition: background 300ms ease-in-out;        
         }
     }
@@ -375,7 +376,7 @@ footer{
         border-right: 0;
 
         &:hover{
-            color: rgb(213, 235, 255);
+            color: $aHovers;
         }
     }
 }
@@ -413,7 +414,7 @@ footer{
         border-radius: 10px;
 
         &:hover{
-            background-color: rgba(71, 181, 255, 0.712);
+            background-color: $hoverBackground;
             transition: background 300ms ease-in-out;
         }
     }
@@ -425,7 +426,7 @@ footer{
         @include flexAdj(flex, flex-start, center, row);
 
         &:hover{
-            color: rgb(213, 235, 255);
+            color: $aHovers;
         }
     }
 }
@@ -460,7 +461,7 @@ footer{
         border-radius: 10px;
 
         &:hover{
-            background-color: rgba(71, 181, 255, 0.712);
+            background-color: $hoverBackground;
             transition: background 300ms ease-in-out;
         }
     }
@@ -472,7 +473,7 @@ footer{
         @include flexAdj(flex, flex-start, center, row);
 
         &:hover{
-            color: rgb(213, 235, 255);
+            color: $aHovers;
         }
     }
 }
@@ -507,7 +508,7 @@ footer{
         border-radius: 10px;
 
         &:hover{
-            background-color: rgba(71, 181, 255, 0.712);
+            background-color: $hoverBackground;
             transition: background 300ms ease-in-out;
         }
     }
@@ -519,7 +520,7 @@ footer{
         @include flexAdj(flex, flex-start, center, row);
 
         &:hover{
-            color: rgb(213, 235, 255);
+            color: $aHovers;
         }
     }
 }
