@@ -1,17 +1,8 @@
-$borderColor: rgba(81, 197, 218, 0.555);
-$menuBackground: rgba(72, 136, 255, 0.192);
+// IMPORTS
+@import './variaveis_trilha';
+@import './functions_trilha';
 
-@mixin flexAdj($flex, $justify_content, $align_items, $flex_direction) {
-    display: $flex;
-    justify-content: $justify_content;
-    align-items: $align_items;
-    flex-direction: $flex_direction;
-}
-@mixin flexCenter() {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+// BODY
 body h2{
     font-size:25px;
     color: white; 
@@ -48,6 +39,10 @@ footer{
     width: 100vw;
     height: 100vh;
     padding: 50px;
+
+    div{
+        @include flexAdj(flex, center, center, column);
+    }
 }
 .trilhainfo{
     background-color: $menuBackground;
@@ -57,10 +52,6 @@ footer{
     border: 3px solid $borderColor;
     border-radius: 50px;
 }
-.trilhatop div{
-    @include flexCenter();
-    flex-flow: column;
-}
 .trilhatitulo h3{
     font-size: 50px;
     color: white;
@@ -69,9 +60,10 @@ footer{
     height: 170px;
     justify-content: flex-end!important;
     color: white;
-}
-.trilhasubtitulo p{
-    font-size: 30px;
+
+    p{
+        font-size: 30px;
+    }
 }
 .trilhavideo{
     height: 500px;
@@ -79,9 +71,10 @@ footer{
     background-color: $menuBackground;
     border: 3px solid $borderColor;
     border-radius: 10px;
-}
-.trilhavideo video{
-    border-radius: 10px;
+
+    video{
+        border-radius: 10px;
+    }
 }
 .trilhabotao{
     height: 130px;
@@ -90,17 +83,19 @@ footer{
     border-radius: 30px;
     margin-top: 20px;
     padding: 5px;
-}
-.trilhabotao button{
-    font-size: 20px;
-    color: white;
-    text-decoration: none!important;
-    background: none;
-    outline: none;
-    border: none;
-}
-.trilhabotao button:hover{
-    color: rgb(213, 235, 255);
+
+    button{
+        font-size: 20px;
+        color: white;
+        text-decoration: none!important;
+        background: none;
+        outline: none;
+        border: none;
+        
+        &:hover{
+            color: rgb(213, 235, 255); 
+        }
+    }
 }
 .foguetediv{
     @include flexCenter();
@@ -126,55 +121,55 @@ footer{
     background: transparent;
     color: white;
     font-size: 20px;
-}
+}   
 #buttonup{
     margin: 850px 50px 20px 0;
     @include flexCenter();
     width: 60px;
     height: 60px;
-}
-#buttonup img{
-    height: 35px;
-    width: auto;
+
+    img{
+        height: 35px;
+        width: auto;
+    }
 }
 #buttondown{
     margin: 970px 50px 0 0;
     @include flexCenter();
     width: 60px;
     height: 60px;
-}
-#buttondown img{
-    transform: rotate(180deg);
-    height: 35px;
-    width: auto;
+
+    img{
+        transform: rotate(180deg);
+        height: 35px;
+        width: auto;    
+    }
 }
 #trilha {
     @include flexAdj(none, flex-start, center, column);
     width: 100vw;
     height: auto;
 }
-.trilhaheader{
-    @include flexCenter();
-    height: 8vh;
-}
 .nomepilar{
     @include flexCenter();
     position: absolute;
     left: 0;
     margin: 0 0 0 70px;
-}
-.nomepilar h1{ 
-    font-size: 15px;
-    color: #fff;
+
+    h1{
+        font-size: 15px;
+        color: #fff;
+    }
 }
 .iconeshome{
     @include flexCenter();
     position: absolute;
     right: 0;
     margin: 0 70px 0 0;
-}
-.iconeshome a{
-    margin: 0 0 0 20px;
+
+    a{
+        margin: 0 0 0 20px;
+    }
 }
 .iconesp1{
     @include flexAdj(flex, flex-start, center, row);
@@ -196,33 +191,36 @@ footer{
     flex-flow: column;
     background-color: $borderColor;
     border-radius: 10px;
-}
-#ferramentasp1 li{
-    list-style: none;
-    @include flexAdj(flex, flex-start, center, row);
-    width: 100%;
-    font-size: 15px;
-    height: 70px;
-    padding-left: 10px;
-    border-radius: 10px;
-}
-#ferramentasp1 li:hover{
-    background-color: rgba(71, 181, 255, 0.712);
-    transition: background 300ms ease-in-out;
-}
-#ferramentasp1 a{
-    text-decoration: none;
-    color: white;
-    width: 90%;
-    height: 100%;
-    @include flexAdj(flex, flex-start, center, row);
-    border-top: 0;
-    border-bottom: 2px solid white;
-    border-left: 0;
-    border-right: 0;
-}
-#ferramentasp1 a:hover{
-    color: rgb(213, 235, 255);
+
+    li{
+        @include flexAdj(flex, flex-start, center, row);
+        list-style: none;
+        width: 100%;
+        font-size: 15px;
+        height: 70px;
+        padding-left: 10px;
+        border-radius: 10px;
+
+        &:hover{
+            background-color: rgba(71, 181, 255, 0.712);
+            transition: background 300ms ease-in-out;        
+        }
+    }
+    a{
+        text-decoration: none;
+        color: white;
+        width: 90%;
+        height: 100%;
+        @include flexAdj(flex, flex-start, center, row);
+        border-top: 0;
+        border-bottom: 2px solid white;
+        border-left: 0;
+        border-right: 0;
+
+        &:hover{
+            color: rgb(213, 235, 255);
+        }
+    }
 }
 #mvppasso{
     border: 0!important;
@@ -247,33 +245,36 @@ footer{
     flex-flow: column;
     background-color: $borderColor;
     border-radius: 10px;
-}
-#ferramentasp2 li{
-    list-style: none;
-    @include flexAdj(flex, flex-start, center, row);
-    width: 100%;
-    font-size: 15px;
-    height: 70px;
-    padding-left: 10px;
-    border-radius: 10px;
-}
-#ferramentasp2 li:hover{
-    background-color: rgba(71, 181, 255, 0.712);
-    transition: background 300ms ease-in-out;
-}
-#ferramentasp2 a{
-    text-decoration: none;
-    color: white;
-    width: 90%;
-    height: 100%;
-    @include flexAdj(flex, flex-start, center, row);
-    border-top: 0;
-    border-bottom: 2px solid white;
-    border-left: 0;
-    border-right: 0;
-}
-#ferramentasp2 a:hover{
-    color: rgb(213, 235, 255);
+
+    li{
+        list-style: none;
+        @include flexAdj(flex, flex-start, center, row);
+        width: 100%;
+        font-size: 15px;
+        height: 70px;
+        padding-left: 10px;
+        border-radius: 10px;
+
+        &:hover{
+            background-color: rgba(71, 181, 255, 0.712);
+            transition: background 300ms ease-in-out;
+        }
+    }
+    a{
+        text-decoration: none;
+        color: white;
+        width: 90%;
+        height: 100%;
+        @include flexAdj(flex, flex-start, center, row);
+        border-top: 0;
+        border-bottom: 2px solid white;
+        border-left: 0;
+        border-right: 0;
+
+        &:hover{
+            color: rgb(213, 235, 255);
+        }
+    }
 }
 #plilpasso{
     border: 0!important;
@@ -300,29 +301,32 @@ footer{
     flex-flow: column;
     background-color: $borderColor;
     border-radius: 10px;
-}
-#ferramentasp3 li{
-    list-style: none;
-    @include flexAdj(flex, flex-start, center, row);
-    width: 100%;
-    font-size: 15px;
-    height: 45px;
-    padding-left: 10px;
-    border-radius: 10px;
-}
-#ferramentasp3 li:hover{
-    background-color: rgba(71, 181, 255, 0.712);
-    transition: background 300ms ease-in-out;
-}
-#ferramentasp3 a{
-    text-decoration: none;
-    color: white;
-    width: 90%;
-    height: 100%;
-    @include flexAdj(flex, flex-start, center, row);
-}
-#ferramentasp3 a:hover{
-    color: rgb(213, 235, 255);
+
+    li{
+        list-style: none;
+        @include flexAdj(flex, flex-start, center, row);
+        width: 100%;
+        font-size: 15px;
+        height: 45px;
+        padding-left: 10px;
+        border-radius: 10px;
+
+        &:hover{
+            background-color: rgba(71, 181, 255, 0.712);
+            transition: background 300ms ease-in-out;        
+        }
+    }
+    a{
+        text-decoration: none;
+        color: white;
+        width: 90%;
+        height: 100%;
+        @include flexAdj(flex, flex-start, center, row);
+
+        &:hover{
+            color: rgb(213, 235, 255);
+        }
+    }
 }
 .iconesp4{
     width: 80vw;
@@ -344,33 +348,36 @@ footer{
     flex-flow: column;
     background-color: $borderColor;
     border-radius: 10px;
-}
-#ferramentasp4 li{
-    list-style: none;
-    @include flexAdj(flex, flex-start, center, row);
-    width: 100%;
-    font-size: 15px;
-    height: 45px;
-    padding-left: 10px;
-    border-radius: 10px;
-}
-#ferramentasp4 li:hover{
-    background-color: rgba(71, 181, 255, 0.712);
-    transition: background 300ms ease-in-out;
-}
-#ferramentasp4 a{
-    text-decoration: none;
-    color: white;
-    width: 90%;
-    height: 100%;
-    @include flexAdj(flex, flex-start, center, row);
-    border-top: 0;
-    border-bottom: 2px solid white;
-    border-left: 0;
-    border-right: 0;
-}
-#ferramentasp4 a:hover{
-    color: rgb(213, 235, 255);
+
+    li{
+        list-style: none;
+        @include flexAdj(flex, flex-start, center, row);
+        width: 100%;
+        font-size: 15px;
+        height: 45px;
+        padding-left: 10px;
+        border-radius: 10px;
+
+        &:hover{
+            background-color: rgba(71, 181, 255, 0.712);
+            transition: background 300ms ease-in-out;        
+        }
+    }
+    a{
+        text-decoration: none;
+        color: white;
+        width: 90%;
+        height: 100%;
+        @include flexAdj(flex, flex-start, center, row);
+        border-top: 0;
+        border-bottom: 2px solid white;
+        border-left: 0;
+        border-right: 0;
+
+        &:hover{
+            color: rgb(213, 235, 255);
+        }
+    }
 }
 #wpapasso{
     border: 0!important;
@@ -395,29 +402,32 @@ footer{
     flex-flow: column;
     background-color: $borderColor;
     border-radius: 10px;
-}
-#ferramentasp5 li{
-    list-style: none;
-    @include flexAdj(flex, flex-start, center, row);
-    width: 100%;
-    font-size: 15px;
-    height: 45px;
-    padding-left: 10px;
-    border-radius: 10px;
-}
-#ferramentasp5 li:hover{
-    background-color: rgba(71, 181, 255, 0.712);
-    transition: background 300ms ease-in-out;
-}
-#ferramentasp5 a{
-    text-decoration: none;
-    color: white;
-    width: 90%;
-    height: 100%;
-    @include flexAdj(flex, flex-start, center, row);
-}
-#ferramentasp5 a:hover{
-    color: rgb(213, 235, 255);
+
+    li{
+        list-style: none;
+        @include flexAdj(flex, flex-start, center, row);
+        width: 100%;
+        font-size: 15px;
+        height: 45px;
+        padding-left: 10px;
+        border-radius: 10px;
+
+        &:hover{
+            background-color: rgba(71, 181, 255, 0.712);
+            transition: background 300ms ease-in-out;
+        }
+    }
+    a{
+        text-decoration: none;
+        color: white;
+        width: 90%;
+        height: 100%;
+        @include flexAdj(flex, flex-start, center, row);
+
+        &:hover{
+            color: rgb(213, 235, 255);
+        }
+    }
 }
 .iconesp6{
     width: 70vw;
@@ -439,29 +449,32 @@ footer{
     flex-flow: column;
     background-color: $borderColor;
     border-radius: 10px;
-}
-#ferramentasp6 li{
-    list-style: none;
-    @include flexAdj(flex, flex-start, center, row);
-    width: 100%;
-    font-size: 15px;
-    height: 45px;
-    padding-left: 10px;
-    border-radius: 10px;
-}
-#ferramentasp6 li:hover{
-    background-color: rgba(71, 181, 255, 0.712);
-    transition: background 300ms ease-in-out;
-}
-#ferramentasp6 a{
-    text-decoration: none;
-    color: white;
-    width: 90%;
-    height: 100%;
-    @include flexAdj(flex, flex-start, center, row);
-}
-#ferramentasp6 a:hover{
-    color: rgb(213, 235, 255);
+
+    li{
+        list-style: none;
+        @include flexAdj(flex, flex-start, center, row);
+        width: 100%;
+        font-size: 15px;
+        height: 45px;
+        padding-left: 10px;
+        border-radius: 10px;
+
+        &:hover{
+            background-color: rgba(71, 181, 255, 0.712);
+            transition: background 300ms ease-in-out;
+        }
+    }
+    a{
+        text-decoration: none;
+        color: white;
+        width: 90%;
+        height: 100%;
+        @include flexAdj(flex, flex-start, center, row);
+
+        &:hover{
+            color: rgb(213, 235, 255);
+        }
+    }
 }
 .iconesp7{
     width: 70vw;
@@ -483,70 +496,52 @@ footer{
     flex-flow: column;
     background-color: $borderColor;
     border-radius: 10px;
-}
-#ferramentasp7 li{
-    list-style: none;
-    @include flexAdj(flex, flex-start, center, row);
-    width: 100%;
-    font-size: 15px;
-    height: 45px;
-    padding-left: 10px;
-    border-radius: 10px;
-}
-#ferramentasp7 li:hover{
-    background-color: rgba(71, 181, 255, 0.712);
-    transition: background 300ms ease-in-out;
-}
-#ferramentasp7 a{
-    text-decoration: none;
-    color: white;
-    width: 90%;
-    height: 100%;
-    @include flexAdj(flex, flex-start, center, row);
-}
-#ferramentasp7 a:hover{
-    color: rgb(213, 235, 255);
+
+    li{
+        list-style: none;
+        @include flexAdj(flex, flex-start, center, row);
+        width: 100%;
+        font-size: 15px;
+        height: 45px;
+        padding-left: 10px;
+        border-radius: 10px;
+
+        &:hover{
+            background-color: rgba(71, 181, 255, 0.712);
+            transition: background 300ms ease-in-out;
+        }
+    }
+    a{
+        text-decoration: none;
+        color: white;
+        width: 90%;
+        height: 100%;
+        @include flexAdj(flex, flex-start, center, row);
+
+        &:hover{
+            color: rgb(213, 235, 255);
+        }
+    }
 }
 /* PLANETAS */
 #planeta1{
-    position: absolute;
-    left: 20rem;
-    width: 830px;
-    height: auto;
+    @include planetFormat(20rem, auto, 830px);// (left, right, width)
 }
 #planeta2{
-    position: absolute;
-    right: 30rem;
-    width: 480px;
-    height: auto;
+    @include planetFormat(auto, 30rem, 480px);// (left, right, width)
 }
 #planeta3{
-    position: absolute;
-    left: 30rem;
-    width: 480px;
-    height: auto;
+    @include planetFormat(30rem, auto, 480px);// (left, right, width)
 }
 #planeta4{
-    position: absolute;
-    right: 25rem;
-    width: 460px;
-    height: auto;
+    @include planetFormat(auto, 25rem, 460px);// (left, right, width)
 }
 #planeta5{
-    position: absolute;
-    left: 31rem;
-    width: 450px;
-    height: auto;
+    @include planetFormat(31rem, auto, 450px);// (left, right, width)
 }
 #planeta6{
-    position: absolute;
-    right: 30rem;
-    width: 450px;
-    height: auto;
+    @include planetFormat(auto, 30rem, 450px);// (left, right, width)
 }
 #planeta7{
-    position: absolute;
-    left: 31rem;
-    width: 450px;
-    height: auto;
+    @include planetFormat(31rem, auto, 450px);// (left, right, width)
 }

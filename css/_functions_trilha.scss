@@ -1,0 +1,21 @@
+// Formatação Flex
+@mixin flexAdj($flex, $justify_content, $align_items, $flex_direction) {
+    display: $flex;
+    justify-content: $justify_content;
+    align-items: $align_items;
+    flex-direction: $flex_direction;
+}
+@mixin flexCenter() {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+// Formatação Planetas
+@mixin planetFormat($p_left, $p_right, $p_width) {
+    position: absolute;
+    height: auto;
+    left: $p_left;
+    right: $p_right;
+    width: $p_width;
+}
