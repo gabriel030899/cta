@@ -38,11 +38,11 @@
                         <li><a href="">No Touch</a></li>
                     </ul>
                 </div>
-                <img src="assets/img/planeta7.png" width="256px" height="auto" alt="Passo 7">
+                <img id="planeta7" src="assets/img/planeta7gif.gif" width="256px" height="auto" alt="Passo 7">
             </div>
             
             <div class="iconesp6" id="passo6">
-                <img src="assets/img/planeta6.png" width="256px" height="auto" alt="Passo 6">
+                <img id="planeta6" src="assets/img/planeta6gif.gif" width="256px" height="auto" alt="Passo 6">
                 <div class="textp6" >
                     <h2>Passo 6:</h2>
                     <ul id="ferramentasp6">
@@ -58,11 +58,11 @@
                         <li><a href="">Rota Otimizada</a></li>
                     </ul>
                 </div>
-                <img src="assets/img/planeta5.png" width="256px" height="auto" alt="Passo 5">
+                <img id="planeta5" src="assets/img/planeta5gif.gif" width="256px" height="auto" alt="Passo 5">
             </div>
 
             <div class="iconesp4" id="passo4">
-                <img src="assets/img/planeta4.png" width="300px" height="auto" alt="Passo 4">
+                <img id="planeta4" src="assets/img/planeta4gif.gif" width="300px" height="auto" alt="Passo 4">
                 <div class="textp4" >
                     <h2>Passo 4:</h2>
                     <ul id="ferramentasp4">
@@ -79,11 +79,11 @@
                         <li><a href="">Funil de Transferência</a></li>
                     </ul>
                 </div>
-                <img src="assets/img/planeta3.png" width="256px" height="auto" alt="Passo 3">
+                <img id="planeta3" src="assets/img/planeta3gif.gif" width="256px" height="auto" alt="Passo 3">
             </div>
 
             <div class="iconesp2" id="passo2">
-                <img src="assets/img/planeta2.png" width="256px" height="auto" alt="Passo 2">
+                <img id="planeta2" src="assets/img/planeta2gif.gif" alt="Passo 2">
                 <div class="textp2" >
                     <h2>Passo 2:</h2>
                     <ul id="ferramentasp2">
@@ -106,7 +106,7 @@
                         <li><a href="" id="mvppasso">Mapa Visual de Perdas</a></li>
                     </ul>
                 </div>
-                <img id="planeta1" src="assets/img/planeta.png" width="256px" height="auto" alt="Passo 1">
+                <img id="planeta1" src="assets/img/planetagif.gif" alt="Passo 1">
             </div>
             
        </div>
