@@ -2,6 +2,8 @@
 @import './variaveis_trilha';
 @import './functions_trilha';
 
+// =================================================================
+
 // BODY
 body h2{
     font-size:25px;
@@ -22,6 +24,9 @@ footer{
     margin:0;
     @include objSize(auto, 100vw);// height, width
 }
+
+// =================================================================
+
 // NAV MENU ICONS
 #backicon{
     position: fixed;
@@ -35,6 +40,9 @@ footer{
     top: 0;
     margin: 50px 60px 0 0;
 }
+
+// =================================================================
+
 // TRILHA
 .trilhatop{
     @include flexAdj(flex, flex-start, center, column);// display, justify-content, align-items, flex-flow
@@ -162,6 +170,12 @@ footer{
         margin: 0 0 0 20px;
     }
 }
+
+// =================================================================
+
+// PASSOS
+
+// passo 1
 .iconesp1{
     @include flexAdj(flex, flex-start, center, row);// display, justify-content, align-items, flex-flow
     @include icones();
@@ -180,6 +194,8 @@ footer{
 #mvppasso{
     border: 0!important;
 }
+
+// passo 2
 .iconesp2{
     @include flexAdj(flex, flex-end, center, row);// display, justify-content, align-items, flex-flow
     @include icones();
@@ -198,6 +214,8 @@ footer{
 #plilpasso{
     border: 0!important;
 }
+
+// passo 3
 .iconesp3{
     @include flexAdj(flex, flex-start, center, row);// display, justify-content, align-items, flex-flow
     @include icones();
@@ -210,6 +228,8 @@ footer{
 #ferramentasp3{
     @include ferramentas();
 }
+
+// passo 4
 .iconesp4{
     @include flexAdj(flex, flex-end, center, row);// display, justify-content, align-items, flex-flow
     @include icones();
@@ -228,6 +248,8 @@ footer{
 #wpapasso{
     border: 0!important;
 }
+
+// passo 5
 .iconesp5{
     @include flexAdj(flex, flex-start, center, row);// display, justify-content, align-items, flex-flow
     @include icones();
@@ -240,6 +262,8 @@ footer{
 #ferramentasp5{
     @include ferramentas();
 }
+
+// passo 6
 .iconesp6{
     @include flexAdj(flex, flex-end, center, row);// display, justify-content, align-items, flex-flow
     @include icones();
@@ -252,6 +276,8 @@ footer{
 #ferramentasp6{
     @include ferramentas();
 }
+
+// passo 7
 .iconesp7{
     @include flexAdj(flex, flex-start, center, row);// display, justify-content, align-items, flex-flow
     @include icones();
@@ -264,6 +290,9 @@ footer{
 #ferramentasp7{
     @include ferramentas();
 }
+
+// =================================================================
+
 /* PLANETAS */
 #planeta1{
     @include planetFormat(20rem, auto, 830px);// (left, right, width)
@@ -286,3 +315,7 @@ footer{
 #planeta7{
     @include planetFormat(31rem, auto, 450px);// (left, right, width)
 }
+
+// =================================================================
+
+// RESPONSIVIDADE
