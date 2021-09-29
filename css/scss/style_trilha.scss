@@ -20,7 +20,7 @@ body {
 }
 footer{
     margin:0;
-    width:100vw;
+    @include objSize(auto, 100vw);// height, width
 }
 // NAV MENU ICONS
 #backicon{
@@ -37,19 +37,17 @@ footer{
 }
 // TRILHA
 .trilhatop{
-    @include flexAdj(flex, flex-start, center, column);
-    width: 100vw;
-    height: 100vh;
+    @include flexAdj(flex, flex-start, center, column);// display, justify-content, align-items, flex-flow
+    @include objSize(100vh, 100vw);// height, width
     padding: 50px;
 
     div{
-        @include flexAdj(flex, center, center, column);
+        @include flexAdj(flex, center, center, column);// display, justify-content, align-items, flex-flow
     }
 }
 .trilhainfo{
+    @include objSize(90vh, 95vw);// height, width
     background-color: $menuBackground;
-    width: 95vw;
-    height: 90vh;
     padding: 20px;
     border: 3px solid $borderColor;
     border-radius: 50px;
@@ -59,7 +57,7 @@ footer{
     color: white;
 }
 .trilhasubtitulo{
-    height: 170px;
+    @include objSize(170px, auto);// height, width
     justify-content: flex-end!important;
     color: white;
 
@@ -68,8 +66,7 @@ footer{
     }
 }
 .trilhavideo{
-    height: 500px;
-    width: auto;
+    @include objSize(500px, auto);// height, width
     background-color: $menuBackground;
     border: 3px solid $borderColor;
     border-radius: 10px;
@@ -79,7 +76,7 @@ footer{
     }
 }
 .trilhabotao{
-    height: 130px;
+    @include objSize(130px, auto);// height, width
     background-color: $hoverBackground;
     border: 2px solid $borderColor;
     border-radius: 30px;
@@ -101,21 +98,18 @@ footer{
 }
 .foguetediv{
     @include flexCenter();
-    width: 100vw;
-    height: auto;
+    @include objSize(auto, 100vw);// height, width
 }
 #foguete{
+    @include objSize(auto, 390px);// height, width
     position: fixed;
-    width: 390px;
-    height: auto;
     display: none;
     margin-top: 500px;
 }
 .controller{
+    @include objSize(auto, 100px);// height, width
     position: fixed;
-    width: 100px;
     right: 0;
-    height: auto;
     display: flex;
     border: 2px solid white;
     border-radius: 50%;
@@ -124,21 +118,18 @@ footer{
     font-size: 20px;
 }   
 #buttonup{
-    margin: 850px 50px 20px 0;
     @include flexCenter();
-    width: 60px;
-    height: 60px;
+    @include objSize(60px, 60px);// height, width
+    margin: 850px 50px 20px 0;
 
     img{
-        height: 35px;
-        width: auto;
+        @include objSize(35px, auto);// height, width
     }
 }
 #buttondown{
-    margin: 970px 50px 0 0;
     @include flexCenter();
-    width: 60px;
-    height: 60px;
+    @include objSize(60px, 60px);// height, width
+    margin: 970px 50px 0 0;
 
     img{
         transform: rotate(180deg);
@@ -147,9 +138,8 @@ footer{
     }
 }
 #trilha {
-    @include flexAdj(none, flex-start, center, column);
-    width: 100vw;
-    height: auto;
+    @include flexAdj(none, flex-start, center, column);// display, justify-content, align-items, flex-flow
+    @include objSize(auto, 100vw);// height, width
 }
 .nomepilar{
     @include flexCenter();
@@ -173,356 +163,106 @@ footer{
     }
 }
 .iconesp1{
-    @include flexAdj(flex, flex-start, center, row);
-    width: 70vw;
-    height: 800px;
+    @include flexAdj(flex, flex-start, center, row);// display, justify-content, align-items, flex-flow
+    @include icones();
 }
 .textp1{
-    @include flexAdj(flex, center, center, column);
+    @include flexAdj(flex, center, center, column);// display, justify-content, align-items, flex-flow
+    @include texts();
     margin: 0 20px 0 0;
-    background-color: $menuBackground;
-    border: 2px solid $borderColor;
-    border-radius: 30px;
-    padding: 5px;
-    width: 300px;
 }
 #ferramentasp1{
-    width: 100%;
-    padding: 0;
-    flex-flow: column;
-    background-color: $borderColor;
-    border-radius: 10px;
-
-    li{
-        @include flexAdj(flex, flex-start, center, row);
-        list-style: none;
-        width: 100%;
-        font-size: 15px;
-        height: 70px;
-        padding-left: 10px;
-        border-radius: 10px;
-
-        &:hover{
-            background-color: $hoverBackground;
-            transition: background 300ms ease-in-out;        
-        }
-    }
+    @include ferramentas();
     a{
-        text-decoration: none;
-        color: white;
-        width: 90%;
-        height: 100%;
-        @include flexAdj(flex, flex-start, center, row);
-        border-top: 0;
-        border-bottom: 2px solid white;
-        border-left: 0;
-        border-right: 0;
-
-        &:hover{
-            color: $aHovers;
-        }
+        @include botBorder();
     }
 }
 #mvppasso{
     border: 0!important;
 }
 .iconesp2{
-    @include flexAdj(flex, flex-end, center, row);
-    width: 70vw;
-    height: 800px;
+    @include flexAdj(flex, flex-end, center, row);// display, justify-content, align-items, flex-flow
+    @include icones();
 }
 .textp2{
-    @include flexAdj(flex, flex-start, center, column);
+    @include flexAdj(flex, flex-start, center, column);// display, justify-content, align-items, flex-flow
+    @include texts();
     margin: 0 0 0 20px;
-    background-color: $menuBackground;
-    border: 2px solid $borderColor;
-    border-radius: 30px;
-    padding: 5px;
-    width: 300px;
 }
 #ferramentasp2{
-    width: 100%;
-    padding: 0;
-    flex-flow: column;
-    background-color: $borderColor;
-    border-radius: 10px;
-
-    li{
-        list-style: none;
-        @include flexAdj(flex, flex-start, center, row);
-        width: 100%;
-        font-size: 15px;
-        height: 70px;
-        padding-left: 10px;
-        border-radius: 10px;
-
-        &:hover{
-            background-color: $hoverBackground;
-            transition: background 300ms ease-in-out;
-        }
-    }
+    @include ferramentas();
     a{
-        text-decoration: none;
-        color: white;
-        width: 90%;
-        height: 100%;
-        @include flexAdj(flex, flex-start, center, row);
-        border-top: 0;
-        border-bottom: 2px solid white;
-        border-left: 0;
-        border-right: 0;
-
-        &:hover{
-            color: $aHovers;
-        }
+        @include botBorder();
     }
 }
 #plilpasso{
     border: 0!important;
 }
 .iconesp3{
-    display: flex;
-    width: 70vw;
-    height: 800px;
-    justify-content: flex-start;
-    align-items: center;
+    @include flexAdj(flex, flex-start, center, row);// display, justify-content, align-items, flex-flow
+    @include icones();
 }
 .textp3{
-    @include flexAdj(flex, center, center, column);
+    @include flexAdj(flex, center, center, column);// display, justify-content, align-items, flex-flow
+    @include texts();
     margin: 0 20px 0 0;
-    background-color: $menuBackground;
-    border: 2px solid $borderColor;
-    border-radius: 30px;
-    padding: 5px;
-    width: 300px;
 }
 #ferramentasp3{
-    width: 100%;
-    padding: 0;
-    flex-flow: column;
-    background-color: $borderColor;
-    border-radius: 10px;
-
-    li{
-        list-style: none;
-        @include flexAdj(flex, flex-start, center, row);
-        width: 100%;
-        font-size: 15px;
-        height: 45px;
-        padding-left: 10px;
-        border-radius: 10px;
-
-        &:hover{
-            background-color: $hoverBackground;
-            transition: background 300ms ease-in-out;        
-        }
-    }
-    a{
-        text-decoration: none;
-        color: white;
-        width: 90%;
-        height: 100%;
-        @include flexAdj(flex, flex-start, center, row);
-
-        &:hover{
-            color: $aHovers;
-        }
-    }
+    @include ferramentas();
 }
 .iconesp4{
-    width: 80vw;
-    height: 800px;
-    @include flexAdj(flex, flex-end, center, row);
+    @include flexAdj(flex, flex-end, center, row);// display, justify-content, align-items, flex-flow
+    @include icones();
 }
 .textp4{
-    @include flexAdj(flex, flex-start, center, column);
+    @include flexAdj(flex, flex-start, center, column);// display, justify-content, align-items, flex-flow
+    @include texts();
     margin: 0 0 0 20px;
-    background-color: $menuBackground;
-    border: 2px solid $borderColor;
-    border-radius: 30px;
-    padding: 5px;
-    width: 300px;
 }
 #ferramentasp4{
-    width: 100%;
-    padding: 0;
-    flex-flow: column;
-    background-color: $borderColor;
-    border-radius: 10px;
-
-    li{
-        list-style: none;
-        @include flexAdj(flex, flex-start, center, row);
-        width: 100%;
-        font-size: 15px;
-        height: 45px;
-        padding-left: 10px;
-        border-radius: 10px;
-
-        &:hover{
-            background-color: $hoverBackground;
-            transition: background 300ms ease-in-out;        
-        }
-    }
+    @include ferramentas();
     a{
-        text-decoration: none;
-        color: white;
-        width: 90%;
-        height: 100%;
-        @include flexAdj(flex, flex-start, center, row);
-        border-top: 0;
-        border-bottom: 2px solid white;
-        border-left: 0;
-        border-right: 0;
-
-        &:hover{
-            color: $aHovers;
-        }
+        @include botBorder();
     }
 }
 #wpapasso{
     border: 0!important;
 }
 .iconesp5{
-    width: 70vw;
-    height: 800px;
-    @include flexAdj(flex, flex-start, center, row);
+    @include flexAdj(flex, flex-start, center, row);// display, justify-content, align-items, flex-flow
+    @include icones();
 }
 .textp5{
-    @include flexAdj(flex, center, center, column);
+    @include flexAdj(flex, center, center, column);// display, justify-content, align-items, flex-flow
+    @include texts();
     margin: 0 20px 0 0;
-    background-color: $menuBackground;
-    border: 2px solid $borderColor;
-    border-radius: 30px;
-    padding: 5px;
-    width: 300px;
 }
 #ferramentasp5{
-    width: 100%;
-    padding: 0;
-    flex-flow: column;
-    background-color: $borderColor;
-    border-radius: 10px;
-
-    li{
-        list-style: none;
-        @include flexAdj(flex, flex-start, center, row);
-        width: 100%;
-        font-size: 15px;
-        height: 45px;
-        padding-left: 10px;
-        border-radius: 10px;
-
-        &:hover{
-            background-color: $hoverBackground;
-            transition: background 300ms ease-in-out;
-        }
-    }
-    a{
-        text-decoration: none;
-        color: white;
-        width: 90%;
-        height: 100%;
-        @include flexAdj(flex, flex-start, center, row);
-
-        &:hover{
-            color: $aHovers;
-        }
-    }
+    @include ferramentas();
 }
 .iconesp6{
-    width: 70vw;
-    height: 800px;
-    @include flexAdj(flex, flex-end, center, row);
+    @include flexAdj(flex, flex-end, center, row);// display, justify-content, align-items, flex-flow
+    @include icones();
 }
 .textp6{
-    @include flexAdj(flex, flex-start, center, column);
+    @include flexAdj(flex, flex-start, center, column);// display, justify-content, align-items, flex-flow
+    @include texts();
     margin: 0 0 0 20px;
-    background-color: $menuBackground;
-    border: 2px solid $borderColor;
-    border-radius: 30px;
-    padding: 5px;
-    width: 300px;
 }
 #ferramentasp6{
-    width: 100%;
-    padding: 0;
-    flex-flow: column;
-    background-color: $borderColor;
-    border-radius: 10px;
-
-    li{
-        list-style: none;
-        @include flexAdj(flex, flex-start, center, row);
-        width: 100%;
-        font-size: 15px;
-        height: 45px;
-        padding-left: 10px;
-        border-radius: 10px;
-
-        &:hover{
-            background-color: $hoverBackground;
-            transition: background 300ms ease-in-out;
-        }
-    }
-    a{
-        text-decoration: none;
-        color: white;
-        width: 90%;
-        height: 100%;
-        @include flexAdj(flex, flex-start, center, row);
-
-        &:hover{
-            color: $aHovers;
-        }
-    }
+    @include ferramentas();
 }
 .iconesp7{
-    width: 70vw;
-    height: 800px;
-    @include flexAdj(flex, flex-start, center, row);
+    @include flexAdj(flex, flex-start, center, row);// display, justify-content, align-items, flex-flow
+    @include icones();
 }
 .textp7{
-    @include flexAdj(flex, flex-start, center, column);
+    @include flexAdj(flex, flex-start, center, column);// display, justify-content, align-items, flex-flow
+    @include texts();
     margin: 0 20px 0 0;
-    background-color: $menuBackground;
-    border: 2px solid $borderColor;
-    border-radius: 30px;
-    padding: 5px;
-    width: 300px;
 }
 #ferramentasp7{
-    width: 100%;
-    padding: 0;
-    flex-flow: column;
-    background-color: $borderColor;
-    border-radius: 10px;
-
-    li{
-        list-style: none;
-        @include flexAdj(flex, flex-start, center, row);
-        width: 100%;
-        font-size: 15px;
-        height: 45px;
-        padding-left: 10px;
-        border-radius: 10px;
-
-        &:hover{
-            background-color: $hoverBackground;
-            transition: background 300ms ease-in-out;
-        }
-    }
-    a{
-        text-decoration: none;
-        color: white;
-        width: 90%;
-        height: 100%;
-        @include flexAdj(flex, flex-start, center, row);
-
-        &:hover{
-            color: $aHovers;
-        }
-    }
+    @include ferramentas();
 }
 /* PLANETAS */
 #planeta1{
@@ -535,7 +275,7 @@ footer{
     @include planetFormat(30rem, auto, 480px);// (left, right, width)
 }
 #planeta4{
-    @include planetFormat(auto, 25rem, 460px);// (left, right, width)
+    @include planetFormat(auto, 30rem, 460px);// (left, right, width)
 }
 #planeta5{
     @include planetFormat(31rem, auto, 450px);// (left, right, width)

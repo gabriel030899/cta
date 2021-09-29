@@ -29,6 +29,7 @@ body {
 
 footer {
   margin: 0;
+  height: auto;
   width: 100vw;
 }
 
@@ -60,8 +61,8 @@ footer {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 100vw;
   height: 100vh;
+  width: 100vw;
   padding: 50px;
 }
 
@@ -82,9 +83,9 @@ footer {
 }
 
 .trilhainfo {
-  background-color: rgba(72, 136, 255, 0.192);
-  width: 95vw;
   height: 90vh;
+  width: 95vw;
+  background-color: rgba(72, 136, 255, 0.192);
   padding: 20px;
   border: 3px solid rgba(81, 197, 218, 0.555);
   border-radius: 50px;
@@ -97,6 +98,7 @@ footer {
 
 .trilhasubtitulo {
   height: 170px;
+  width: auto;
   -webkit-box-pack: end !important;
       -ms-flex-pack: end !important;
           justify-content: flex-end !important;
@@ -121,6 +123,7 @@ footer {
 
 .trilhabotao {
   height: 130px;
+  width: auto;
   background-color: rgba(123, 202, 255, 0.555);
   border: 2px solid rgba(81, 197, 218, 0.555);
   border-radius: 30px;
@@ -151,23 +154,23 @@ footer {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 100vw;
   height: auto;
+  width: 100vw;
 }
 
 #foguete {
-  position: fixed;
-  width: 390px;
   height: auto;
+  width: 390px;
+  position: fixed;
   display: none;
   margin-top: 500px;
 }
 
 .controller {
-  position: fixed;
-  width: 100px;
-  right: 0;
   height: auto;
+  width: 100px;
+  position: fixed;
+  right: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -179,7 +182,6 @@ footer {
 }
 
 #buttonup {
-  margin: 850px 50px 20px 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -189,8 +191,9 @@ footer {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 60px;
   height: 60px;
+  width: 60px;
+  margin: 850px 50px 20px 0;
 }
 
 #buttonup img {
@@ -199,7 +202,6 @@ footer {
 }
 
 #buttondown {
-  margin: 970px 50px 0 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -209,8 +211,9 @@ footer {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 60px;
   height: 60px;
+  width: 60px;
+  margin: 970px 50px 0 0;
 }
 
 #buttondown img {
@@ -232,8 +235,8 @@ footer {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 100vw;
   height: auto;
+  width: 100vw;
 }
 
 .nomepilar {
@@ -289,8 +292,8 @@ footer {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  width: 70vw;
   height: 800px;
+  width: 70vw;
 }
 
 .textp1 {
@@ -307,15 +310,17 @@ footer {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin: 0 20px 0 0;
+  height: auto;
+  width: 300px;
   background-color: rgba(72, 136, 255, 0.192);
   border: 2px solid rgba(81, 197, 218, 0.555);
   border-radius: 30px;
   padding: 5px;
-  width: 300px;
+  margin: 0 20px 0 0;
 }
 
 #ferramentasp1 {
+  height: auto;
   width: 100%;
   padding: 0;
   -webkit-box-orient: vertical;
@@ -340,10 +345,10 @@ footer {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  list-style: none;
-  width: 100%;
-  font-size: 15px;
   height: 70px;
+  width: 100%;
+  list-style: none;
+  font-size: 15px;
   padding-left: 10px;
   border-radius: 10px;
 }
@@ -355,10 +360,6 @@ footer {
 }
 
 #ferramentasp1 a {
-  text-decoration: none;
-  color: white;
-  width: 90%;
-  height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -372,14 +373,21 @@ footer {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  border-top: 0;
-  border-bottom: 2px solid white;
-  border-left: 0;
-  border-right: 0;
+  height: 100%;
+  width: 90%;
+  text-decoration: none;
+  color: white;
 }
 
 #ferramentasp1 a:hover {
   color: #b3ddff;
+}
+
+#ferramentasp1 a {
+  border-top: 0;
+  border-bottom: 2px solid white;
+  border-left: 0;
+  border-right: 0;
 }
 
 #mvppasso {
@@ -400,8 +408,8 @@ footer {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  width: 70vw;
   height: 800px;
+  width: 70vw;
 }
 
 .textp2 {
@@ -418,15 +426,17 @@ footer {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin: 0 0 0 20px;
+  height: auto;
+  width: 300px;
   background-color: rgba(72, 136, 255, 0.192);
   border: 2px solid rgba(81, 197, 218, 0.555);
   border-radius: 30px;
   padding: 5px;
-  width: 300px;
+  margin: 0 0 0 20px;
 }
 
 #ferramentasp2 {
+  height: auto;
   width: 100%;
   padding: 0;
   -webkit-box-orient: vertical;
@@ -438,7 +448,6 @@ footer {
 }
 
 #ferramentasp2 li {
-  list-style: none;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -452,9 +461,10 @@ footer {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  width: 100%;
-  font-size: 15px;
   height: 70px;
+  width: 100%;
+  list-style: none;
+  font-size: 15px;
   padding-left: 10px;
   border-radius: 10px;
 }
@@ -466,10 +476,6 @@ footer {
 }
 
 #ferramentasp2 a {
-  text-decoration: none;
-  color: white;
-  width: 90%;
-  height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -483,14 +489,21 @@ footer {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  border-top: 0;
-  border-bottom: 2px solid white;
-  border-left: 0;
-  border-right: 0;
+  height: 100%;
+  width: 90%;
+  text-decoration: none;
+  color: white;
 }
 
 #ferramentasp2 a:hover {
   color: #b3ddff;
+}
+
+#ferramentasp2 a {
+  border-top: 0;
+  border-bottom: 2px solid white;
+  border-left: 0;
+  border-right: 0;
 }
 
 #plilpasso {
@@ -501,14 +514,18 @@ footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 70vw;
-  height: 800px;
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  height: 800px;
+  width: 70vw;
 }
 
 .textp3 {
@@ -525,15 +542,17 @@ footer {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin: 0 20px 0 0;
+  height: auto;
+  width: 300px;
   background-color: rgba(72, 136, 255, 0.192);
   border: 2px solid rgba(81, 197, 218, 0.555);
   border-radius: 30px;
   padding: 5px;
-  width: 300px;
+  margin: 0 20px 0 0;
 }
 
 #ferramentasp3 {
+  height: auto;
   width: 100%;
   padding: 0;
   -webkit-box-orient: vertical;
@@ -545,7 +564,6 @@ footer {
 }
 
 #ferramentasp3 li {
-  list-style: none;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -559,9 +577,10 @@ footer {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  height: 70px;
   width: 100%;
+  list-style: none;
   font-size: 15px;
-  height: 45px;
   padding-left: 10px;
   border-radius: 10px;
 }
@@ -573,10 +592,6 @@ footer {
 }
 
 #ferramentasp3 a {
-  text-decoration: none;
-  color: white;
-  width: 90%;
-  height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -590,6 +605,10 @@ footer {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  height: 100%;
+  width: 90%;
+  text-decoration: none;
+  color: white;
 }
 
 #ferramentasp3 a:hover {
@@ -597,8 +616,6 @@ footer {
 }
 
 .iconesp4 {
-  width: 80vw;
-  height: 800px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -612,6 +629,8 @@ footer {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  height: 800px;
+  width: 70vw;
 }
 
 .textp4 {
@@ -628,15 +647,17 @@ footer {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin: 0 0 0 20px;
+  height: auto;
+  width: 300px;
   background-color: rgba(72, 136, 255, 0.192);
   border: 2px solid rgba(81, 197, 218, 0.555);
   border-radius: 30px;
   padding: 5px;
-  width: 300px;
+  margin: 0 0 0 20px;
 }
 
 #ferramentasp4 {
+  height: auto;
   width: 100%;
   padding: 0;
   -webkit-box-orient: vertical;
@@ -648,7 +669,6 @@ footer {
 }
 
 #ferramentasp4 li {
-  list-style: none;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -662,9 +682,10 @@ footer {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  height: 70px;
   width: 100%;
+  list-style: none;
   font-size: 15px;
-  height: 45px;
   padding-left: 10px;
   border-radius: 10px;
 }
@@ -676,10 +697,6 @@ footer {
 }
 
 #ferramentasp4 a {
-  text-decoration: none;
-  color: white;
-  width: 90%;
-  height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -693,14 +710,21 @@ footer {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  border-top: 0;
-  border-bottom: 2px solid white;
-  border-left: 0;
-  border-right: 0;
+  height: 100%;
+  width: 90%;
+  text-decoration: none;
+  color: white;
 }
 
 #ferramentasp4 a:hover {
   color: #b3ddff;
+}
+
+#ferramentasp4 a {
+  border-top: 0;
+  border-bottom: 2px solid white;
+  border-left: 0;
+  border-right: 0;
 }
 
 #wpapasso {
@@ -708,8 +732,6 @@ footer {
 }
 
 .iconesp5 {
-  width: 70vw;
-  height: 800px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -723,6 +745,8 @@ footer {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  height: 800px;
+  width: 70vw;
 }
 
 .textp5 {
@@ -739,15 +763,17 @@ footer {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin: 0 20px 0 0;
+  height: auto;
+  width: 300px;
   background-color: rgba(72, 136, 255, 0.192);
   border: 2px solid rgba(81, 197, 218, 0.555);
   border-radius: 30px;
   padding: 5px;
-  width: 300px;
+  margin: 0 20px 0 0;
 }
 
 #ferramentasp5 {
+  height: auto;
   width: 100%;
   padding: 0;
   -webkit-box-orient: vertical;
@@ -759,7 +785,6 @@ footer {
 }
 
 #ferramentasp5 li {
-  list-style: none;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -773,9 +798,10 @@ footer {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  height: 70px;
   width: 100%;
+  list-style: none;
   font-size: 15px;
-  height: 45px;
   padding-left: 10px;
   border-radius: 10px;
 }
@@ -787,10 +813,6 @@ footer {
 }
 
 #ferramentasp5 a {
-  text-decoration: none;
-  color: white;
-  width: 90%;
-  height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -804,6 +826,10 @@ footer {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  height: 100%;
+  width: 90%;
+  text-decoration: none;
+  color: white;
 }
 
 #ferramentasp5 a:hover {
@@ -811,8 +837,6 @@ footer {
 }
 
 .iconesp6 {
-  width: 70vw;
-  height: 800px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -826,6 +850,8 @@ footer {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  height: 800px;
+  width: 70vw;
 }
 
 .textp6 {
@@ -842,15 +868,17 @@ footer {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin: 0 0 0 20px;
+  height: auto;
+  width: 300px;
   background-color: rgba(72, 136, 255, 0.192);
   border: 2px solid rgba(81, 197, 218, 0.555);
   border-radius: 30px;
   padding: 5px;
-  width: 300px;
+  margin: 0 0 0 20px;
 }
 
 #ferramentasp6 {
+  height: auto;
   width: 100%;
   padding: 0;
   -webkit-box-orient: vertical;
@@ -862,7 +890,6 @@ footer {
 }
 
 #ferramentasp6 li {
-  list-style: none;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -876,9 +903,10 @@ footer {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  height: 70px;
   width: 100%;
+  list-style: none;
   font-size: 15px;
-  height: 45px;
   padding-left: 10px;
   border-radius: 10px;
 }
@@ -890,10 +918,6 @@ footer {
 }
 
 #ferramentasp6 a {
-  text-decoration: none;
-  color: white;
-  width: 90%;
-  height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -907,6 +931,10 @@ footer {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  height: 100%;
+  width: 90%;
+  text-decoration: none;
+  color: white;
 }
 
 #ferramentasp6 a:hover {
@@ -914,8 +942,6 @@ footer {
 }
 
 .iconesp7 {
-  width: 70vw;
-  height: 800px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -929,6 +955,8 @@ footer {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  height: 800px;
+  width: 70vw;
 }
 
 .textp7 {
@@ -945,15 +973,17 @@ footer {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin: 0 20px 0 0;
+  height: auto;
+  width: 300px;
   background-color: rgba(72, 136, 255, 0.192);
   border: 2px solid rgba(81, 197, 218, 0.555);
   border-radius: 30px;
   padding: 5px;
-  width: 300px;
+  margin: 0 20px 0 0;
 }
 
 #ferramentasp7 {
+  height: auto;
   width: 100%;
   padding: 0;
   -webkit-box-orient: vertical;
@@ -965,7 +995,6 @@ footer {
 }
 
 #ferramentasp7 li {
-  list-style: none;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -979,9 +1008,10 @@ footer {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  height: 70px;
   width: 100%;
+  list-style: none;
   font-size: 15px;
-  height: 45px;
   padding-left: 10px;
   border-radius: 10px;
 }
@@ -993,10 +1023,6 @@ footer {
 }
 
 #ferramentasp7 a {
-  text-decoration: none;
-  color: white;
-  width: 90%;
-  height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1010,6 +1036,10 @@ footer {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  height: 100%;
+  width: 90%;
+  text-decoration: none;
+  color: white;
 }
 
 #ferramentasp7 a:hover {
@@ -1045,7 +1075,7 @@ footer {
   position: absolute;
   height: auto;
   left: auto;
-  right: 25rem;
+  right: 30rem;
   width: 460px;
 }
 

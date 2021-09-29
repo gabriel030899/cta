@@ -1,4 +1,4 @@
-// Formatação Flex
+// FORMATAÇÃO FLEX
 @mixin flexAdj($flex, $justify_content, $align_items, $flex_direction) {
     display: $flex;
     justify-content: $justify_content;
@@ -10,8 +10,12 @@
     justify-content: center;
     align-items: center;
 }
+@mixin objSize($height, $width){
+    height: $height;
+    width: $width;
+}
 
-// Formatação Planetas
+// FORMATAÇÃO PLANETAS
 @mixin planetFormat($p_left, $p_right, $p_width) {
     position: absolute;
     height: auto;
@@ -19,3 +23,53 @@
     right: $p_right;
     width: $p_width;
 }
+
+// FORMATAÇÃO PASSOS
+@mixin icones {
+    @include objSize(800px, 70vw);// height, width
+}
+@mixin texts {
+    @include objSize(auto, 300px);// height, width
+    background-color: $menuBackground;
+    border: 2px solid $borderColor;
+    border-radius: 30px;
+    padding: 5px;
+}
+@mixin ferramentas {
+    @include objSize(auto, 100%);// height, width
+    padding: 0;
+    flex-flow: column;
+    background-color: $borderColor;
+    border-radius: 10px;
+
+    li{
+        @include flexAdj(flex, flex-start, center, row);// display, justify-content, align-items, flex-flow
+        @include objSize(70px, 100%);// height, width
+        list-style: none;
+        font-size: 15px;
+        padding-left: 10px;
+        border-radius: 10px;
+
+        &:hover{
+            background-color: $hoverBackground;
+            transition: background 300ms ease-in-out;        
+        }
+    }
+    a{
+        @include flexAdj(flex, flex-start, center, row);// display, justify-content, align-items, flex-flow
+        @include objSize(100%, 90%);// height, width
+        text-decoration: none;
+        color: white;
+
+        &:hover{
+            color: $aHovers;
+        }
+    }
+}
+@mixin botBorder {
+    border-top: 0;
+    border-bottom: 2px solid white;
+    border-left: 0;
+    border-right: 0;
+}
+
